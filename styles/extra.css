@@ -1,0 +1,17 @@
+/* mudar espaçamento e fonte dos parágrafos */
+p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+  }
+  
+/* Justificar todos os parágrafos */
+p {
+    text-align: justify;
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
