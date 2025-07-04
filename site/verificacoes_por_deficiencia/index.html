@@ -339,6 +339,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Verificações Comuns Por Tipo de Deficiência
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -350,6 +363,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defeitos-mais-comuns-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defeitos Mais Comuns de Acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -445,76 +486,150 @@
 <p>•   <strong>Deficiência Motora</strong>: Usuários com limitações motoras frequentemente utilizam teclado, dispositivos adaptados ou navegação por voz. É essencial garantir a navegação completa por teclado, a ausência de tempo limite restritivo para interações, e que os elementos clicáveis ou tocáveis tenham tamanho mínimo adequado (recomenda-se ao menos 44px por 44px, conforme a WCAG 2.1).</p>
 <p>•   <strong>Deficiência Cognitiva</strong>: A acessibilidade cognitiva envolve aspectos como clareza, previsibilidade e simplicidade da interface. Deve-se assegurar o uso de linguagem direta e simples, padrões visuais consistentes, e a eliminação de distrações excessivas, como animações rápidas ou sons inesperados, que possam comprometer a concentração do usuário.</p>
 <p>A aplicação dessas verificações permite identificar falhas específicas e propor melhorias alinhadas às necessidades reais dos usuários. </p>
-<p>A tabela a seguir resume os principais testes recomendados, servindo como checklist funcional para auditorias internas de acessibilidade digital:</p>
+<h2 id="defeitos-mais-comuns-de-acessibilidade">Defeitos Mais Comuns de Acessibilidade</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">ITEM DO TESTE</th>
-<th style="text-align: left;">COMO TESTAR</th>
-<th style="text-align: left;">DIRETRIZ WCAG / Relevância</th>
-<th style="text-align: left;">TEXTO PADRÃO</th>
+<th style="text-align: left;">Critério WCAG</th>
+<th style="text-align: left;">Erros Mais Comuns</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Impacto para o Usuário (Tipo de Deficiência)</th>
+<th style="text-align: left;">Como Testar</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Componentes dinâmicos têm nome acessível?</td>
-<td style="text-align: left;">Inspecionar com leitor de tela se carrosséis, abas, menus têm rótulo.</td>
-<td style="text-align: left;">4.1.2, 1.3.1</td>
-<td style="text-align: left;">Indicar componentes sem nome ou com nome genérico.</td>
+<td style="text-align: left;"><strong>4.1.2 - Semântica</strong></td>
+<td style="text-align: left;">- Label de botão lido de forma diferente do visual<br>- Label de radio button lido duas vezes<br>- Botão identificado como link e vice-versa</td>
+<td style="text-align: left;">A semântica sempre deve estar correta na leitura de todos os elementos.</td>
+<td style="text-align: left;"><strong>Usuários de leitores de tela</strong> terão dificuldade na navegação e identificação/localização de elementos.</td>
+<td style="text-align: left;"><strong>Navegue com um leitor de telas (NVDA, VoiceOver) e compare a leitura com o que é visível.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Campos de entrada possuem validação acessível?</td>
-<td style="text-align: left;">Inserir dados errados e verificar se mensagens de erro são lidas.</td>
-<td style="text-align: left;">3.3.1, 3.3.3</td>
-<td style="text-align: left;">Informar se as mensagens não são anunciadas por leitores.</td>
+<td style="text-align: left;"><strong>1.1.3 - Mensagens de Status</strong></td>
+<td style="text-align: left;">- Mensagens de erros não lidas automaticamente<br>- Carregamento de novos campos na tela não é informado</td>
+<td style="text-align: left;">Qualquer mensagem exibida na tela após a execução de uma ação deve ser lida automaticamente pelo leitor de telas.</td>
+<td style="text-align: left;"><strong>Usuários de leitores de tela</strong> não recebem feedback das alterações na tela e mensagens relevantes.</td>
+<td style="text-align: left;"><strong>Interaja com formulários (envie com erros) ou ative funcionalidades que carregam novo conteúdo (ex: filtros, paginação) e ouça com leitor de telas.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Mudanças visuais são também anunciadas?</td>
-<td style="text-align: left;">Verificar se atualizações em tempo real (ex: status de carregamento) são lidas.</td>
-<td style="text-align: left;">4.1.3, ARIA Live</td>
-<td style="text-align: left;">Indicar mudanças não percebidas pelo leitor de tela.</td>
+<td style="text-align: left;"><strong>2.1.1 - Disponível via Teclado</strong></td>
+<td style="text-align: left;">- Informações que só estão disponíveis através do recurso mouseover<br>- Acordion que só é expandido se clicar com o mouse<br>- Botão que só executa ação se clicar com o mouse<br>- Elementos clicáveis não tabuláveis</td>
+<td style="text-align: left;">Toda funcionalidade deve estar disponível via teclado.</td>
+<td style="text-align: left;"><strong>Usuários com deficiência motora</strong> ou que utilizam apenas teclado não conseguirão acessar as funcionalidades.</td>
+<td style="text-align: left;"><strong>Tente executar todas as ações da página usando apenas as teclas Tab, Shift+Tab, Enter e setas.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Navegação por região (landmarks) funciona corretamente?</td>
-<td style="text-align: left;">Usar atalhos de navegação por regiões (ex: rotor do VoiceOver ou tecla R no NVDA).</td>
-<td style="text-align: left;">1.3.1, 2.4.1</td>
-<td style="text-align: left;">Informar páginas sem landmarks ou com uso inadequado.</td>
+<td style="text-align: left;"><strong>1.3.2 - Sequência com Significado</strong></td>
+<td style="text-align: left;">- Ordem incorreta na leitura dos elementos da página<br>- Em modais, o botão fechar é lido depois do cabeçalho, porém visualmente o botão vem antes</td>
+<td style="text-align: left;">As Informações devem ser lidas pelo leitor de telas na mesma sequência em que aparecem na tela.</td>
+<td style="text-align: left;"><strong>Usuários de leitores de tela e com deficiência cognitiva</strong> podem ter dificuldade na navegação e uma experiência diferente do visual.</td>
+<td style="text-align: left;"><strong>Navegue com um leitor de telas (usando as setas, 'H' para cabeçalhos, 'L' para listas) e compare a ordem de leitura com a ordem visual.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Modal (popup) é focado automaticamente e fecha com Esc?</td>
-<td style="text-align: left;">Abrir modal e verificar foco, e se o Esc o fecha.</td>
-<td style="text-align: left;">2.4.3, 2.4.7, 3.2.1</td>
-<td style="text-align: left;">Informar modais que não recebem foco ou não são fecháveis.</td>
+<td style="text-align: left;"><strong>2.4.3 - Ordem do Foco</strong></td>
+<td style="text-align: left;">- Quando navegamos com tab, a ordem dos elementos que recebem o foco é diferente da que aparece na tela<br>- Botão continuar visualmente está depois do botão voltar, porém para o leitor de telas o botão continuar é lido primeiro<br>- Ao navegar por tab em modais, o foco é direcionado para tela de trás</td>
+<td style="text-align: left;">Os componentes que podem ser focados devem receber o foco em uma ordem que preserve o significado e a operabilidade.</td>
+<td style="text-align: left;"><strong>Usuários de teclado e de leitores de tela</strong> correm o risco de serem direcionados para uma ação/tela sem saber das outras opções/funcionalidades, além de ter uma experiência diferente do visual.</td>
+<td style="text-align: left;"><strong>Navegue pela página usando apenas a tecla Tab e observe se o foco segue uma ordem lógica e intuitiva, tanto na página principal quanto em modais.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Todos os elementos têm nome e função programáticos?</td>
-<td style="text-align: left;">Inspecionar elementos interativos com ferramenta como o Accessibility Tree.</td>
-<td style="text-align: left;">4.1.2</td>
-<td style="text-align: left;">Listar elementos sem acessibilidade semântica.</td>
+<td style="text-align: left;"><strong>2.5.3 - Rótulo no Nome Acessível</strong></td>
+<td style="text-align: left;">- Dicas adicionais desnecessárias na leitura dos elementos</td>
+<td style="text-align: left;">O texto presente no rótulo do elemento deverá ser lido pelo leitor de telas da mesma forma em que está escrito. Dicas adicionais só devem ser utilizadas quando tivermos vários elementos com o mesmo rótulo. Neste caso, o leitor de telas deve ler primeiro o rótulo visível e depois a dica adicional.</td>
+<td style="text-align: left;"><strong>Usuários de leitores de tela</strong> podem ter a leitura dos elementos confusa e uma experiência diferente do visual.</td>
+<td style="text-align: left;"><strong>Com um leitor de telas, ouça a leitura de botões, links, campos de formulário e compare o áudio com o texto visível.</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Existe bypass de blocos repetitivos?</td>
-<td style="text-align: left;">Verificar se existe link de pular para o conteúdo principal.</td>
-<td style="text-align: left;">2.4.1</td>
-<td style="text-align: left;">Indicar ausência de atalho para o conteúdo principal.</td>
+<td style="text-align: left;"><strong>4.1.1 - Análise (Código)</strong></td>
+<td style="text-align: left;">- Telas com muitos erros de inspeção de código</td>
+<td style="text-align: left;">Erros significativos de validação ou análise de semântica de código devem ser evitados.</td>
+<td style="text-align: left;"><strong>Usuários de leitores de tela</strong> podem ter o conteúdo da página lido incorretamente dependendo da versão do navegador e leitor de telas.</td>
+<td style="text-align: left;"><strong>Execute o plugin AXE do Chrome</strong> e solucione os erros moderados, serious e critical (exceto erros de contraste e do chassi).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Conteúdo audiovisual possui legendas ou transcrição?</td>
-<td style="text-align: left;">Verificar vídeos incorporados e seus recursos de acessibilidade.</td>
-<td style="text-align: left;">1.2.2, 1.2.1</td>
-<td style="text-align: left;">Listar vídeos sem legendas ou alternativas.</td>
+<td style="text-align: left;"><strong>1.4.3 - Contraste Mínimo</strong></td>
+<td style="text-align: left;">- Textos em fonte pequena não possuem contraste suficiente de 4,5:1</td>
+<td style="text-align: left;">Textos devem ter uma relação de contraste entre primeiro e segundo plano. Designers devem garantir contraste de 4,5:1 para textos pequenos, ou 3,0:1 para textos grandes (bold 19px/14pt ou regular 24 px / 18 pt).</td>
+<td style="text-align: left;"><strong>Usuários com baixa visão, daltonismo e outras deficiências visuais</strong> podem não visualizar elementos na tela.</td>
+<td style="text-align: left;"><strong>Utilize ferramenta Colour Contrast Analyser</strong> (ou similar) para medir o contraste de cores entre texto e fundo.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tamanhos de fonte e zoom não quebram layout?</td>
-<td style="text-align: left;">Aumentar zoom (até 200%) ou usar fontes grandes no navegador.</td>
-<td style="text-align: left;">1.4.4</td>
-<td style="text-align: left;">Informar se elementos se sobrepõem ou somem.</td>
+<td style="text-align: left;"><strong>1.3.1 - Informações e Relações<br>2.4.6 - Cabeçalhos e Rótulos</strong></td>
+<td style="text-align: left;">- Textos que não estão marcados como cabeçalho<br>- Textos que estão em nível errado de cabeçalho</td>
+<td style="text-align: left;">Todo texto que é título ou subtítulo de uma página deve estar numa estrutura de cabeçalho <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> etc.</td>
+<td style="text-align: left;"><strong>Usuários de leitores de tela</strong> terão dificuldade para encontrar os conteúdos relevantes da tela, visto que não é possível utilizar a navegação rápida por cabeçalhos.</td>
+<td style="text-align: left;"><strong>Inspecione os títulos e subtítulos</strong> (com as ferramentas do desenvolvedor ou um validador de cabeçalhos) garantindo que todos estejam como cabeçalhos e com sua hierarquia correta. <strong>Use atalhos de navegação por cabeçalho em leitores de tela ('H' no NVDA).</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Áreas clicáveis têm tamanho suficiente?</td>
-<td style="text-align: left;">Clicar com o botão direito no elemento e selecionar "Inspecionar". Deve têr pelo menos 44x44 px</td>
-<td style="text-align: left;">2.5.5</td>
-<td style="text-align: left;">Indicar alvos de toque muito pequenos.</td>
+<td style="text-align: left;"><strong>2.4.7 - Foco Visível</strong></td>
+<td style="text-align: left;">- Botões, tooltips, radiobuttons, etc, sem foco visível<br>- Textos, imagens com foco visível</td>
+<td style="text-align: left;">Ao se navegar por teclado deve ser possível identificar visualmente e facilmente qual elemento da página tem o foco no momento.</td>
+<td style="text-align: left;"><strong>Usuários com deficiência visual (baixa visão)</strong> que utilizam teclado não conseguem identificar onde está a navegação (em qual elemento).</td>
+<td style="text-align: left;"><strong>Navegue por tab</strong> em todos elementos clicáveis. Observe se um indicador de foco (contorno, mudança de cor) aparece claramente. Somente elementos clicáveis devem possuir foco visível.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.4.4 - Redimensionar Texto</strong></td>
+<td style="text-align: left;">- Parte do conteúdo da página fica quebrada</td>
+<td style="text-align: left;">O conteúdo em texto deve ser legível e funcional com a ampliação de 200% do seu tamanho.</td>
+<td style="text-align: left;"><strong>Usuários com baixa visão</strong> podem ter dificuldade para entendimento e navegação do conteúdo.</td>
+<td style="text-align: left;"><strong>Aplique zoom de 200% no navegador</strong> (Ctrl/Cmd +) e verifique se o conteúdo continua visível, funcional e o layout não quebra.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.1.1 - Conteúdo Não Textual</strong></td>
+<td style="text-align: left;">- Textos contidos em imagens não são descritos pelo leitor de telas por não conter o atributo ALT</td>
+<td style="text-align: left;">As imagens que transmitem alguma informação relevante para o usuário devem possuir o atributo ALT descrevendo-a.</td>
+<td style="text-align: left;"><strong>Usuários cegos ou com baixa visão</strong> que utilizam leitores de tela terão ausência de informações.</td>
+<td style="text-align: left;"><strong>Inspecione o código das imagens</strong> para verificar o atributo <code>alt</code>. <strong>Teste unitário utilizando o leitor de telas</strong> para ouvir as descrições das imagens.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.2.1 - Áudio Somente (pré-gravado)</strong></td>
+<td style="text-align: left;">- Vídeos com áudio que não possuem transcrição ou legenda.</td>
+<td style="text-align: left;">Conteúdos em áudio devem ter transcrição textual sincronizada ou disponível logo abaixo.</td>
+<td style="text-align: left;"><strong>Usuários surdos ou com perda auditiva</strong> não conseguem acessar o conteúdo informativo.</td>
+<td style="text-align: left;"><strong>Verifique a presença de transcrições textuais completas para conteúdos de áudio.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.2.2 - Legendas (pré-gravado)</strong></td>
+<td style="text-align: left;">- Vídeos com som e fala sem legendas sincronizadas.</td>
+<td style="text-align: left;">Vídeos devem conter legendas ocultas (closed captions) com falas e sons relevantes.</td>
+<td style="text-align: left;"><strong>Pessoas com deficiência auditiva</strong> não compreendem diálogos e eventos sonoros.</td>
+<td style="text-align: left;"><strong>Assista aos vídeos e verifique se há legendas sincronizadas que incluam diálogos e sons importantes.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2.3.1 - Três Flashes ou Menos</strong></td>
+<td style="text-align: left;">- Animações, banners ou vídeos com flashes rápidos e intermitentes.</td>
+<td style="text-align: left;">Conteúdos visuais não devem piscar mais de 3 vezes por segundo.</td>
+<td style="text-align: left;">Pode causar <strong>convulsões em usuários com epilepsia fotossensível.</strong></td>
+<td style="text-align: left;"><strong>Observe atentamente animações, GIFs ou vídeos para garantir que não pisquem rapidamente (&gt;3 vezes por segundo).</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3.2.2 - Ao Receber Foco</strong></td>
+<td style="text-align: left;">- Campos de formulário que mudam automaticamente o conteúdo da tela ao receber foco.</td>
+<td style="text-align: left;">Mudanças significativas de contexto não devem ocorrer automaticamente ao focar um elemento.</td>
+<td style="text-align: left;"><strong>Usuários com deficiência cognitiva</strong> podem se perder na navegação.</td>
+<td style="text-align: left;"><strong>Navegue usando a tecla Tab e observe se, ao focar um elemento, o conteúdo da tela muda inesperadamente sem aviso.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3.2.3 - Ao Receber Entrada</strong></td>
+<td style="text-align: left;">- Selecionar um item de um menu redireciona para outra página sem aviso.</td>
+<td style="text-align: left;">Mudanças de contexto não devem acontecer automaticamente após entrada de dados.</td>
+<td style="text-align: left;"><strong>Usuários com dificuldades cognitivas</strong> perdem o controle da navegação.</td>
+<td style="text-align: left;"><strong>Interaja com elementos de entrada (ex: selecione um item em um dropdown, digite em um campo) e verifique se há redirecionamentos ou mudanças de contexto inesperadas.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2.2.1 - Tempo Ajustável</strong></td>
+<td style="text-align: left;">- Sessões que expiram rapidamente sem opção de extensão.</td>
+<td style="text-align: left;">Usuários devem ter tempo suficiente para completar ações, ou a possibilidade de ajustar o tempo.</td>
+<td style="text-align: left;"><strong>Usuários com deficiência motora ou cognitiva</strong> podem não conseguir concluir tarefas a tempo.</td>
+<td style="text-align: left;"><strong>Verifique se há limites de tempo para concluir tarefas e se existem opções visíveis para estender ou desativar esses limites.</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3.3.3 - Sugestões de Correção</strong></td>
+<td style="text-align: left;">- Mensagens de erro que não informam o que está errado ou como corrigir.</td>
+<td style="text-align: left;">O sistema deve sugerir como corrigir os erros nos formulários.</td>
+<td style="text-align: left;"><strong>Usuários com dificuldade de compreensão (incluindo deficiência cognitiva)</strong> não conseguem completar formulários.</td>
+<td style="text-align: left;"><strong>Submeta formulários com dados inválidos e verifique se as mensagens de erro são claras e oferecem sugestões de correção.</strong></td>
 </tr>
 </tbody>
 </table>

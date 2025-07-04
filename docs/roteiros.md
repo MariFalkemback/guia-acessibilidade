@@ -12,9 +12,7 @@ A seguir, são apresentados os roteiros organizados por tipo de ambiente:
 
 •	**Testes para Mobile  e Mobile Web / WebView**: Adaptação dos critérios de desktop para ambientes móveis, com ênfase em navegação por gestos e compatibilidade com leitores de tela nativos.
 
-•	**Testes para PDF**: 
-
-Esses roteiros não substituem testes com usuários reais, mas servem como base técnica estruturada para validação contínua da acessibilidade durante o ciclo de desenvolvimento.
+•	**Testes para PDF**: Esses roteiros não substituem testes com usuários reais, mas servem como base técnica estruturada para validação contínua da acessibilidade durante o ciclo de desenvolvimento.
 
 ## Testes para Web (Desktop)
 
