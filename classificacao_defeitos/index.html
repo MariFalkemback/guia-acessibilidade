@@ -269,7 +269,7 @@
   
   
   <span class="md-ellipsis">
-    Ferramentas
+    Ferramentas Recomendadas
     
   </span>
   
@@ -317,6 +317,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Classificação de Defeitos em Testes de Acessibilidade
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -328,6 +341,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#baixo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Médio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alto
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -443,9 +502,12 @@
 Além da classificação por tipo, os defeitos de acessibilidade também devem ser analisados quanto ao seu nível de risco, ou seja, o grau de impacto que cada falha representa na experiência de uso, especialmente para pessoas com deficiência. Essa categorização é essencial para priorizar correções e orientar equipes de desenvolvimento sobre quais barreiras comprometem de forma mais severa a inclusão digital.</p>
 <p>Segundo Lopes e Souza (2020), a avaliação de acessibilidade deve considerar não apenas a existência de falhas, mas sua gravidade na interação com o sistema. Da mesma forma, Ferreira et al. (2018) destacam que a priorização de correções deve partir de uma análise combinada entre frequência da ocorrência, impacto funcional e ausência de alternativas para o usuário.</p>
 <p>Com base nisso, os níveis de risco podem ser definidos da seguinte forma:</p>
-<p>•   <strong>Baixo</strong>: Refere-se a falhas com impacto limitado na experiência geral. Embora possam dificultar levemente a navegação, não comprometem a funcionalidade principal e geralmente possuem soluções alternativas simples. Exemplo: ausência de título em uma imagem decorativa.</p>
-<p>•   <strong>Médio</strong>: Representa barreiras que causam desconforto ou dificultam a interação, mas que ainda permitem o acesso por meios alternativos. Exemplo: formulários com campos sem rótulo visível, mas com instruções textuais ao redor.</p>
-<p>•   <strong>Alto</strong>: Envolve falhas críticas que impedem o acesso completo a conteúdo ou funcionalidades essenciais. Esse tipo de barreira compromete diretamente o direito de acesso à informação e pode excluir totalmente determinados perfis de usuários. Exemplo: botão de envio de formulário que não pode ser acionado por teclado ou não é identificado por <a href="../introducao/#leitores-tela">leitores de tela</a>.</p>
+<h2 id="baixo">Baixo</h2>
+<p>Refere-se a falhas com impacto limitado na experiência geral. Embora possam dificultar levemente a navegação, não comprometem a funcionalidade principal e geralmente possuem soluções alternativas simples. Exemplo: ausência de título em uma imagem decorativa.</p>
+<h2 id="medio">Médio</h2>
+<p>Representa barreiras que causam desconforto ou dificultam a interação, mas que ainda permitem o acesso por meios alternativos. Exemplo: formulários com campos sem rótulo visível, mas com instruções textuais ao redor.</p>
+<h2 id="alto">Alto</h2>
+<p>: Envolve falhas críticas que impedem o acesso completo a conteúdo ou funcionalidades essenciais. Esse tipo de barreira compromete diretamente o direito de acesso à informação e pode excluir totalmente determinados perfis de usuários. Exemplo: botão de envio de formulário que não pode ser acionado por teclado ou não é identificado por <a href="../introducao/#leitores-tela">leitores de tela</a>.</p>
 <p>A definição do nível de risco, portanto, é um elemento estratégico dentro do processo de auditoria de acessibilidade. Ela permite alinhar esforços de correção com os princípios das WCAG e com os objetivos de inclusão, usabilidade e conformidade legal.</p>
 
 
@@ -495,10 +557,12 @@ Além da classificação por tipo, os defeitos de acessibilidade também devem s
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "skip-to-content", "content.code.copy", "navigation.instant", "search.highlight", "skip-to-content"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
       
     
   </body>

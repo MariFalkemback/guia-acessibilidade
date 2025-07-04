@@ -269,7 +269,7 @@
   
   
   <span class="md-ellipsis">
-    Ferramentas
+    Ferramentas Recomendadas
     
   </span>
   
@@ -446,6 +446,29 @@
 <p>•   <strong>Navegação via teclado sem erros críticos</strong>: A acessibilidade para usuários com deficiência motora depende da capacidade de interagir com todos os elementos da interface sem depender do mouse. Conforme defendem Harper e Yesilada (2008), a ausência de suporte ao teclado configura uma das barreiras mais frequentes e prejudiciais na web.</p>
 <p>•   <strong>Código compatível com tecnologias assistivas, como leitores de tela</strong>: Elementos HTML devem estar semanticamente corretos e devidamente rotulados para que softwares como NVDA, VoiceOver e TalkBack interpretem e leiam corretamente o conteúdo.</p>
 <p>Após a validação desses critérios, a dupla colaborativa realizará os testes de acessibilidade, seguindo o <a href="../roteiros/#roteiros">roteiro de testes</a>.</p>
+<p>Fluxograma das Estapas:</p>
+<p><pre class="mermaid"><code>flowchart TD
+    classDef etapa fill:#dff0d8,stroke:#4cae4c,stroke-width:2px,font-size:16px;
+    classDef decisao fill:#fff3cd,stroke:#f0ad4e,stroke-width:2px,font-size:16px;
+
+    A["Concepção&lt;br/&gt;(Incluir critérios de acessibilidade)"]:::etapa --&gt; 
+    B["Especificação&lt;br/&gt;(Detalhar requisitos acessíveis)"]:::etapa --&gt; 
+    C["Desenvolvimento&lt;br/&gt;(Implementar com base nos padrões de acessibilidade)"]:::etapa --&gt; 
+    D["Teste Funcional"]:::etapa --&gt; 
+    E["Teste de Acessibilidade"]:::etapa --&gt; 
+    X["Problemas de acessibilidade encontrados?"]:::decisao
+
+    X --&gt;|Baixo ou médio risco| F["Homologação&lt;br/&gt;(com observações e prazo de correção)"]:::etapa --&gt; G["Implementação"]:::etapa
+    X --&gt;|Alto risco| C</code></pre>
+<strong>Descrição textual do fluxograma:</strong>
+O processo inicia na etapa <strong>Concepção</strong>, onde são considerados os critérios de acessibilidade.<br />
+Em seguida, avança para a fase de <strong>Especificação</strong>, na qual os requisitos acessíveis são detalhados.<br />
+Depois, segue para o <strong>Desenvolvimento</strong>, onde as funcionalidades são implementadas com base nos padrões de acessibilidade.<br />
+O produto passa então pelo <strong>Teste Funcional</strong>, e em seguida pelo <strong>Teste de Acessibilidade</strong>.</p>
+<p>Se não forem encontrados problemas de acessibilidade, ou se forem identificados problemas de <strong><a href="../classificacao_defeitos/#baixo">baixo</a></strong> ou <strong><a href="../classificacao_defeitos/#medio">medio</a></strong> risco, o processo segue para a etapa de <strong>Homologação</strong>, com observações registradas e um prazo definido para correção desses pontos.<br />
+Após a homologação, ocorre a <strong>Implementação</strong>.</p>
+<p>Por outro lado, se forem identificados problemas de acessibilidade considerados de <strong><a href="../classificacao_defeitos/#alto">alto</a></strong> risco, o fluxo retorna à etapa de <strong>Desenvolvimento</strong> para que os erros sejam corrigidos.<br />
+Em seguida, o produto é novamente submetido ao <strong>Teste de Acessibilidade</strong>, reiniciando o ciclo até que os problemas sejam resolvidos e o produto possa seguir para a homologação.</p>
 
 
 
@@ -494,10 +517,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "skip-to-content", "content.code.copy", "navigation.instant", "search.highlight", "skip-to-content"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
       
     
   </body>
