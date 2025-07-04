@@ -445,6 +445,79 @@
 <p>•   <strong>Deficiência Motora</strong>: Usuários com limitações motoras frequentemente utilizam teclado, dispositivos adaptados ou navegação por voz. É essencial garantir a navegação completa por teclado, a ausência de tempo limite restritivo para interações, e que os elementos clicáveis ou tocáveis tenham tamanho mínimo adequado (recomenda-se ao menos 44px por 44px, conforme a WCAG 2.1).</p>
 <p>•   <strong>Deficiência Cognitiva</strong>: A acessibilidade cognitiva envolve aspectos como clareza, previsibilidade e simplicidade da interface. Deve-se assegurar o uso de linguagem direta e simples, padrões visuais consistentes, e a eliminação de distrações excessivas, como animações rápidas ou sons inesperados, que possam comprometer a concentração do usuário.</p>
 <p>A aplicação dessas verificações permite identificar falhas específicas e propor melhorias alinhadas às necessidades reais dos usuários. </p>
+<p>A tabela a seguir resume os principais testes recomendados, servindo como checklist funcional para auditorias internas de acessibilidade digital:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ITEM DO TESTE</th>
+<th style="text-align: left;">COMO TESTAR</th>
+<th style="text-align: left;">DIRETRIZ WCAG / Relevância</th>
+<th style="text-align: left;">TEXTO PADRÃO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Componentes dinâmicos têm nome acessível?</td>
+<td style="text-align: left;">Inspecionar com leitor de tela se carrosséis, abas, menus têm rótulo.</td>
+<td style="text-align: left;">4.1.2, 1.3.1</td>
+<td style="text-align: left;">Indicar componentes sem nome ou com nome genérico.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Campos de entrada possuem validação acessível?</td>
+<td style="text-align: left;">Inserir dados errados e verificar se mensagens de erro são lidas.</td>
+<td style="text-align: left;">3.3.1, 3.3.3</td>
+<td style="text-align: left;">Informar se as mensagens não são anunciadas por leitores.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mudanças visuais são também anunciadas?</td>
+<td style="text-align: left;">Verificar se atualizações em tempo real (ex: status de carregamento) são lidas.</td>
+<td style="text-align: left;">4.1.3, ARIA Live</td>
+<td style="text-align: left;">Indicar mudanças não percebidas pelo leitor de tela.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Navegação por região (landmarks) funciona corretamente?</td>
+<td style="text-align: left;">Usar atalhos de navegação por regiões (ex: rotor do VoiceOver ou tecla R no NVDA).</td>
+<td style="text-align: left;">1.3.1, 2.4.1</td>
+<td style="text-align: left;">Informar páginas sem landmarks ou com uso inadequado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Modal (popup) é focado automaticamente e fecha com Esc?</td>
+<td style="text-align: left;">Abrir modal e verificar foco, e se o Esc o fecha.</td>
+<td style="text-align: left;">2.4.3, 2.4.7, 3.2.1</td>
+<td style="text-align: left;">Informar modais que não recebem foco ou não são fecháveis.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Todos os elementos têm nome e função programáticos?</td>
+<td style="text-align: left;">Inspecionar elementos interativos com ferramenta como o Accessibility Tree.</td>
+<td style="text-align: left;">4.1.2</td>
+<td style="text-align: left;">Listar elementos sem acessibilidade semântica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Existe bypass de blocos repetitivos?</td>
+<td style="text-align: left;">Verificar se existe link de pular para o conteúdo principal.</td>
+<td style="text-align: left;">2.4.1</td>
+<td style="text-align: left;">Indicar ausência de atalho para o conteúdo principal.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Conteúdo audiovisual possui legendas ou transcrição?</td>
+<td style="text-align: left;">Verificar vídeos incorporados e seus recursos de acessibilidade.</td>
+<td style="text-align: left;">1.2.2, 1.2.1</td>
+<td style="text-align: left;">Listar vídeos sem legendas ou alternativas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tamanhos de fonte e zoom não quebram layout?</td>
+<td style="text-align: left;">Aumentar zoom (até 200%) ou usar fontes grandes no navegador.</td>
+<td style="text-align: left;">1.4.4</td>
+<td style="text-align: left;">Informar se elementos se sobrepõem ou somem.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Áreas clicáveis têm tamanho suficiente?</td>
+<td style="text-align: left;">Clicar com o botão direito no elemento e selecionar "Inspecionar". Deve têr pelo menos 44x44 px</td>
+<td style="text-align: left;">2.5.5</td>
+<td style="text-align: left;">Indicar alvos de toque muito pequenos.</td>
+</tr>
+</tbody>
+</table>
 
 
 

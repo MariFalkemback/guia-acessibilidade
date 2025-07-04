@@ -36,7 +36,8 @@ O Product Owner propõe que os usuários façam login e validem operações usan
 
 ---
 
-## Definição clara da cobertura dos testes de acessibilidade  
+## Definição clara da cobertura padrão dos testes de acessibilidade
+  
 **Boa prática para times de design, desenvolvimento e qualidade**
 
 Para garantir a qualidade e a consistência dos testes, recomenda-se estabelecer um cenário padrão para avaliação da acessibilidade, incluindo parâmetros como:
@@ -47,7 +48,7 @@ Para garantir a qualidade e a consistência dos testes, recomenda-se estabelecer
 | **Sistema operacional** | Windows 10                                         |
 | **Navegador**         | Google Chrome na versão mais recente                 |
 | **Tecnologia assistiva** | Leitor de tela NVDA na versão mais recente         |
-
+| **Leitor de PDF**        | Adobe Reader mais recente |
 **Critérios da WCAG considerados nos testes**
 
 | Critérios              | Descrição                                           |

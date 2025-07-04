@@ -13,3 +13,19 @@ Para garantir uma acessibilidade digital efetiva, é fundamental considerar as n
 •	**Deficiência Cognitiva**: A acessibilidade cognitiva envolve aspectos como clareza, previsibilidade e simplicidade da interface. Deve-se assegurar o uso de linguagem direta e simples, padrões visuais consistentes, e a eliminação de distrações excessivas, como animações rápidas ou sons inesperados, que possam comprometer a concentração do usuário.
 
 A aplicação dessas verificações permite identificar falhas específicas e propor melhorias alinhadas às necessidades reais dos usuários. 
+
+
+A tabela a seguir resume os principais testes recomendados, servindo como checklist funcional para auditorias internas de acessibilidade digital:
+
+| ITEM DO TESTE                               | COMO TESTAR                                                                                                | DIRETRIZ WCAG / Relevância | TEXTO PADRÃO                                            |
+|:--------------------------------------------|:-----------------------------------------------------------------------------------------------------------|:-------------|:--------------------------------------------------------|
+| Componentes dinâmicos têm nome acessível?   | Inspecionar com leitor de tela se carrosséis, abas, menus têm rótulo.                                      | 4.1.2, 1.3.1 | Indicar componentes sem nome ou com nome genérico.      |
+| Campos de entrada possuem validação acessível? | Inserir dados errados e verificar se mensagens de erro são lidas.                                          | 3.3.1, 3.3.3 | Informar se as mensagens não são anunciadas por leitores. |
+| Mudanças visuais são também anunciadas?     | Verificar se atualizações em tempo real (ex: status de carregamento) são lidas.                            | 4.1.3, ARIA Live | Indicar mudanças não percebidas pelo leitor de tela.    |
+| Navegação por região (landmarks) funciona corretamente? | Usar atalhos de navegação por regiões (ex: rotor do VoiceOver ou tecla R no NVDA).                        | 1.3.1, 2.4.1 | Informar páginas sem landmarks ou com uso inadequado.   |
+| Modal (popup) é focado automaticamente e fecha com Esc? | Abrir modal e verificar foco, e se o Esc o fecha.                                                          | 2.4.3, 2.4.7, 3.2.1 | Informar modais que não recebem foco ou não são fecháveis. |
+| Todos os elementos têm nome e função programáticos? | Inspecionar elementos interativos com ferramenta como o Accessibility Tree.                                | 4.1.2        | Listar elementos sem acessibilidade semântica.          |
+| Existe bypass de blocos repetitivos?        | Verificar se existe link de pular para o conteúdo principal.                                               | 2.4.1        | Indicar ausência de atalho para o conteúdo principal.   |
+| Conteúdo audiovisual possui legendas ou transcrição? | Verificar vídeos incorporados e seus recursos de acessibilidade.                                           | 1.2.2, 1.2.1 | Listar vídeos sem legendas ou alternativas.             |
+| Tamanhos de fonte e zoom não quebram layout? | Aumentar zoom (até 200%) ou usar fontes grandes no navegador.                                              | 1.4.4        | Informar se elementos se sobrepõem ou somem.            |
+| Áreas clicáveis têm tamanho suficiente?     | Clicar com o botão direito no elemento e selecionar "Inspecionar". Deve têr pelo menos 44x44 px                                               | 2.5.5  | Indicar alvos de toque muito pequenos.                  |

@@ -433,18 +433,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testes-para-mobile-web-webview" class="md-nav__link">
+  <a href="#testes-para-aplicativos-mobile-e-mobile-web-webview" class="md-nav__link">
     <span class="md-ellipsis">
-      Testes para Mobile Web / WebView
+      Testes para Aplicativos Mobile e Mobile Web / WebView
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#testes-para-aplicativos-nativos-android-ios" class="md-nav__link">
+  <a href="#testes-para-pdf" class="md-nav__link">
     <span class="md-ellipsis">
-      Testes para Aplicativos Nativos (Android / iOS)
+      Testes para PDF
     </span>
   </a>
   
@@ -497,13 +497,13 @@
 
 
 <h1 id="roteiros-de-testes"><h1 id="roteiros">Roteiros de Testes</h1></h1>
-<p>Para facilitar o processo de testes, os roteiros são organizados por ambiente — web (desktop), web móvel e aplicativos nativos — e apresentam instruções claras sobre como executar cada verificação, quais critérios das WCAG são aplicáveis e orientam sobre o registro padronizado de falhas de acessibilidade.</p>
+<p>Para facilitar o processo de testes, os roteiros são organizados por ambiente — web (desktop), web mobile / aplicativos mobile e PDF — e apresentam instruções claras sobre como executar cada verificação, quais critérios das WCAG são aplicáveis e orientam sobre o registro padronizado de falhas de acessibilidade.</p>
 <p>Essa sistematização permite maior consistência nos testes manuais e automatizados, além de orientar as equipes de desenvolvimento na identificação e resolução de problemas. </p>
 <p>Os testes cobrem pontos críticos como componentes dinâmicos, validação de formulários, feedback visual e auditivo, navegação por regiões (landmarks), uso correto de modais, estrutura semântica, acessibilidade de vídeos, dimensionamento responsivo e tamanho de áreas clicáveis. </p>
 <p>A seguir, são apresentados os roteiros organizados por tipo de ambiente:</p>
 <p>•   <strong>Testes para Web (Desktop)</strong>: Focados na navegação por teclado, uso de leitores de tela, contraste de cores, estrutura semântica e interatividade.</p>
-<p>•   <strong>Testes para Mobile Web / WebView</strong>: Adaptação dos critérios de desktop para ambientes móveis, com ênfase em navegação por gestos e compatibilidade com leitores de tela nativos.</p>
-<p>•   <strong>Testes para Aplicativos Nativos (Android / iOS)</strong>: Avaliação de propriedades específicas de acessibilidade em componentes nativos, como contentDescription e accessibilityLabel, além da navegação por gestos e foco de tela.</p>
+<p>•   <strong>Testes para Mobile  e Mobile Web / WebView</strong>: Adaptação dos critérios de desktop para ambientes móveis, com ênfase em navegação por gestos e compatibilidade com leitores de tela nativos.</p>
+<p>•   <strong>Testes para PDF</strong>: </p>
 <p>Esses roteiros não substituem testes com usuários reais, mas servem como base técnica estruturada para validação contínua da acessibilidade durante o ciclo de desenvolvimento.</p>
 <h2 id="testes-para-web-desktop">Testes para Web (Desktop)</h2>
 <table>
@@ -516,6 +516,102 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;">O idioma da página está definido corretamente?</td>
+<td style="text-align: left;">Verificar se o atributo lang está presente no HTML (ex: <html lang="pt-BR">)</td>
+<td style="text-align: left;">3.1.1</td>
+<td style="text-align: left;">Informar páginas sem definição de idioma, dificultando a leitura por leitores de tela.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Idioma de partes diferentes está indicado?</td>
+<td style="text-align: left;">Verificar se palavras/frases em outros idiomas têm lang específico (ex: lang="en")</td>
+<td style="text-align: left;">3.1.2</td>
+<td style="text-align: left;">Indicar trechos com outro idioma sem marcação adequada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">É possível parar, pausar ou ocultar conteúdo em movimento?</td>
+<td style="text-align: left;">Verificar sliders/carrosséis automáticos, banners animados, vídeos em loop</td>
+<td style="text-align: left;">2.2.2</td>
+<td style="text-align: left;">Informar se não há controles visíveis para pausar conteúdo em movimento.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Há controle de volume para áudio reproduzido automaticamente?</td>
+<td style="text-align: left;">Verificar se áudios têm controles ou podem ser pausados</td>
+<td style="text-align: left;">1.4.2</td>
+<td style="text-align: left;">Indicar áudios que iniciam sozinhos e não podem ser pausados ou silenciados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">O conteúdo responde corretamente ao uso apenas do teclado (sem mouse)?</td>
+<td style="text-align: left;">Tentar realizar todas as interações usando apenas o teclado</td>
+<td style="text-align: left;">2.1.2, 2.1.4</td>
+<td style="text-align: left;">Listar funções inacessíveis ou ativadas indevidamente por teclas únicas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Há feedback visual para ações que afetam o conteúdo (ex: envio de formulário)?</td>
+<td style="text-align: left;">Submeter formulários, interagir com botões e aguardar resposta visual ou sonora</td>
+<td style="text-align: left;">3.2.1, 4.1.3</td>
+<td style="text-align: left;">Listar interações sem retorno visual ou auditivo.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Os campos possuem instruções e sugestões de correção em caso de erro?</td>
+<td style="text-align: left;">Testar formulários com dados incorretos</td>
+<td style="text-align: left;">3.3.2, 3.3.3</td>
+<td style="text-align: left;">Informar campos que não oferecem ajuda ou sugestões de correção.</td>
+</tr>
+<tr>
+<td style="text-align: left;">A navegação não depende exclusivamente de cores?</td>
+<td style="text-align: left;">Verificar botões, gráficos, indicadores</td>
+<td style="text-align: left;">1.4.1</td>
+<td style="text-align: left;">Indicar elementos cuja única diferenciação é cor (ex: "botão verde para continuar").</td>
+</tr>
+<tr>
+<td style="text-align: left;">Há informações sensoriais dependentes apenas de visão ou audição?</td>
+<td style="text-align: left;">Observar orientações como "clique no botão vermelho" ou "ouça o alerta"</td>
+<td style="text-align: left;">1.3.3</td>
+<td style="text-align: left;">Apontar instruções que não tenham alternativas acessíveis para todos os sentidos.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elementos com foco ou ponteiro revelam conteúdo visível e acessível?</td>
+<td style="text-align: left;">Navegar com teclado/mouse e verificar tooltips, menus suspensos, popups</td>
+<td style="text-align: left;">1.4.13</td>
+<td style="text-align: left;">Indicar conteúdos ocultos que não aparecem ou não são acessíveis via teclado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Há título claro na aba ou topo da página?</td>
+<td style="text-align: left;">Verificar se o title do HTML representa bem o conteúdo</td>
+<td style="text-align: left;">2.4.2</td>
+<td style="text-align: left;">Indicar páginas com título genérico ou ausente.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elementos interativos têm o mesmo rótulo visual e programático?</td>
+<td style="text-align: left;">Verificar se botão visível como "Enviar" também é lido como "Enviar" pelo leitor</td>
+<td style="text-align: left;">2.5.3</td>
+<td style="text-align: left;">Listar botões cuja label visual e label semântico não correspondem.</td>
+</tr>
+<tr>
+<td style="text-align: left;">O sistema previne erros críticos antes da submissão (financeiro, dados sensíveis)?</td>
+<td style="text-align: left;">Simular envio de formulário com dados relevantes (ex: pagamento, matrícula)</td>
+<td style="text-align: left;">3.3.4</td>
+<td style="text-align: left;">Indicar falta de revisão/confirmação antes de ações críticas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Existem elementos piscando mais de 3x por segundo?</td>
+<td style="text-align: left;">Observar banners, gifs, sliders, animações</td>
+<td style="text-align: left;">2.3.1</td>
+<td style="text-align: left;">Indicar elementos com flash perigoso (risco de convulsão).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Há instruções claras sem depender exclusivamente de localização visual?</td>
+<td style="text-align: left;">Verificar se há instruções do tipo "veja no canto direito" sem apoio de ícone/texto</td>
+<td style="text-align: left;">1.3.3</td>
+<td style="text-align: left;">Indicar instruções que dependem apenas de localização visual.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Informações são agrupadas de forma lógica?</td>
+<td style="text-align: left;">Observar se formulários e seções têm agrupamentos coerentes com headings ou fieldsets</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">Informar se campos ou conteúdos relacionados não estão agrupados semanticamente.</td>
+</tr>
 <tr>
 <td style="text-align: left;">A ordem de leitura dos elementos está lógica?</td>
 <td style="text-align: left;">Navegar com setas direcionais, Tab, H, U, V (leitor de tela).</td>
@@ -638,7 +734,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="testes-para-mobile-web-webview">Testes para Mobile Web / WebView</h2>
+<h2 id="testes-para-aplicativos-mobile-e-mobile-web-webview">Testes para Aplicativos Mobile e Mobile Web / WebView</h2>
 <p>Os testes realizados para Web (Desktop) também podem ser aplicados ao ambiente mobile, desde que sejam feitas adaptações específicas para suas particularidades. No contexto móvel, a atenção deve se concentrar em aspectos como:</p>
 <p>•   <strong>A navegação por gestos, como deslizar o dedo ou realizar toques múltiplos na tela;</strong></p>
 <p>•   <strong>O uso de leitores de tela nativos, como o TalkBack no sistema Android e o VoiceOver no iOS;</strong></p>
@@ -681,7 +777,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Áreas clicáveis são grandes o suficiente para toque?</strong></td>
-<td style="text-align: left;">Clicar com o botão direito no elemento e selecionar "Inspecionar". Deve têr pelo menos 44x44 px</td>
+<td style="text-align: left;">Inspecionar o elemento nas ferramentas de desenvolvedor do navegador/emulador para verificar dimensões, garantindo pelo menos 44x44 pixels.</td>
 <td style="text-align: left;">2.5.5</td>
 <td style="text-align: left;">Indicar alvos de toque muito pequenos que dificultam a interação.</td>
 </tr>
@@ -693,160 +789,268 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>O uso da meta viewport é adequado?</strong></td>
-<td style="text-align: left;">Inspecionar o código para verificar a meta tag <code>viewport</code> e seu <code>user-scalable</code>.</td>
+<td style="text-align: left;">Inspecionar o código para verificar a meta tag <code>viewport</code> e se <code>user-scalable=no</code> não está presente.</td>
 <td style="text-align: left;">1.4.4</td>
 <td style="text-align: left;">Relatar quando o zoom do usuário é desabilitado ou a escala inicial é muito pequena.</td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>Há descrição para conteúdo não textual em Mobile Web?</strong></td>
+<td style="text-align: left;">Navegar com leitor de tela para verificar se imagens, ícones e gráficos têm texto alternativo descritivo.</td>
+<td style="text-align: left;">1.1.1</td>
+<td style="text-align: left;">Listar elementos não textuais sem descrição acessível ou com descrições inadequadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Conteúdos apenas áudio/vídeo pré-gravados possuem alternativas?</strong></td>
+<td style="text-align: left;">Verificar se vídeos e áudios pré-gravados têm legendas, transcrições ou audiodescrição.</td>
+<td style="text-align: left;">1.2.1, 1.2.2, 1.2.3, 1.2.5</td>
+<td style="text-align: left;">Indicar ausência de legendas, transcrições ou audiodescrições para mídias pré-gravadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A utilização de cores é o único meio de transmitir informação?</strong></td>
+<td style="text-align: left;">Observar se a cor é o único recurso para indicar status, ações ou diferenciar elementos importantes.</td>
+<td style="text-align: left;">1.4.1</td>
+<td style="text-align: left;">Relatar quando a informação crucial depende exclusivamente da cor, sem alternativa textual ou de ícone.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>O contraste de cores do conteúdo é suficiente?</strong></td>
+<td style="text-align: left;">Usar ferramentas de análise de contraste (ex: Colour Contrast Analyser) no navegador do dispositivo/emulador.</td>
+<td style="text-align: left;">1.4.3, 1.4.11</td>
+<td style="text-align: left;">Listar textos ou elementos gráficos importantes com contraste insuficiente em relação ao fundo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>O conteúdo pode ser pausado, parado ou ocultado?</strong></td>
+<td style="text-align: left;">Verificar se carrosséis, animações ou conteúdos com limite de tempo podem ser controlados pelo usuário.</td>
+<td style="text-align: left;">2.2.2</td>
+<td style="text-align: left;">Informar elementos que se movem, piscam ou rolam automaticamente sem opção de pausa/parada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Há atalho para pular blocos repetitivos (Mobile)?</strong></td>
+<td style="text-align: left;">Verificar a existência e funcionalidade de links "Pular para o Conteúdo Principal" ou similar.</td>
+<td style="text-align: left;">2.4.1</td>
+<td style="text-align: left;">Indicar ausência de um atalho para pular blocos de conteúdo repetitivos, especialmente em interfaces com muitos elementos fixos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Links e botões têm finalidade clara no contexto?</strong></td>
+<td style="text-align: left;">Navegar com leitor de tela e verificar se o texto de links e botões é descritivo, sem termos genéricos como "clique aqui".</td>
+<td style="text-align: left;">2.4.4, 2.4.6</td>
+<td style="text-align: left;">Listar links ou botões com texto genérico, que não indicam sua função sem o contexto visual.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos com movimento respondem a gestos de ponteiro?</strong></td>
+<td style="text-align: left;">Interagir com elementos que controlam movimentos (ex: sliders, carrosséis) usando gestos de toque únicos.</td>
+<td style="text-align: left;">2.5.1</td>
+<td style="text-align: left;">Informar quando gestos mais complexos são exigidos onde um único toque seria suficiente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Há opção de cancelar ou reverter ações de ponteiro?</strong></td>
+<td style="text-align: left;">Realizar ações de arrastar e soltar ou toques longos e verificar se há opção de cancelar antes da conclusão.</td>
+<td style="text-align: left;">2.5.2</td>
+<td style="text-align: left;">Relatar ações que são ativadas na <em>pressão inicial</em> do toque e não na liberação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rótulos visíveis correspondem ao nome programático?</strong></td>
+<td style="text-align: left;">Usar leitor de tela para verificar se o texto visível de um componente é lido de forma consistente com seu nome acessível.</td>
+<td style="text-align: left;">2.5.3</td>
+<td style="text-align: left;">Indicar inconsistência entre o rótulo visível e o nome programático lido pelo leitor de tela.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Funcionalidades por movimento têm alternativa?</strong></td>
+<td style="text-align: left;">Se o aplicativo usa movimentos (ex: agitar para desfazer), verificar se há uma alternativa via interface.</td>
+<td style="text-align: left;">2.5.4</td>
+<td style="text-align: left;">Relatar quando funcionalidades ativadas por movimento não têm uma alternativa UI.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>O idioma da página é declarado?</strong></td>
+<td style="text-align: left;">Inspecionar o código HTML para verificar o atributo <code>lang</code> na tag <code>&lt;html&gt;</code>.</td>
+<td style="text-align: left;">3.1.1</td>
+<td style="text-align: left;">Informar se o idioma principal da página não está declarado, prejudicando a pronúncia do leitor de tela.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Idiomas de partes do conteúdo são declarados?</strong></td>
+<td style="text-align: left;">Verificar se trechos de texto em idiomas diferentes do principal têm seu <code>lang</code> declarado.</td>
+<td style="text-align: left;">3.1.2</td>
+<td style="text-align: left;">Relatar quando trechos em outro idioma não são marcados corretamente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mudanças de contexto inesperadas são evitadas?</strong></td>
+<td style="text-align: left;">Interagir com formulários e controles para verificar se não há mudanças inesperadas de tela ou foco.</td>
+<td style="text-align: left;">3.2.1, 3.2.2</td>
+<td style="text-align: left;">Listar mudanças de contexto súbitas ou inesperadas ao preencher campos ou interagir com controles.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Validação de entrada de dados é clara e acessível?</strong></td>
+<td style="text-align: left;">Inserir dados incorretos e verificar se as mensagens de erro são claras e acessíveis via leitor de tela.</td>
+<td style="text-align: left;">3.3.1, 3.3.3</td>
+<td style="text-align: left;">Informar quando mensagens de erro não são lidas, claras ou não sugerem correção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prevenção de erros está implementada para dados críticos?</strong></td>
+<td style="text-align: left;">Testar submissão de formulários críticos (financeiros, legais) e verificar mecanismos de prevenção de erros.</td>
+<td style="text-align: left;">3.3.4</td>
+<td style="text-align: left;">Relatar ausência de revisão, confirmação ou opção de reverter para formulários com dados sensíveis.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mensagens de status são anunciadas por leitores de tela?</strong></td>
+<td style="text-align: left;">Observar interações que geram mensagens de status (ex: "carregando", "sucesso") e verificar se são anunciadas.</td>
+<td style="text-align: left;">4.1.3</td>
+<td style="text-align: left;">Indicar mensagens de status que não são percebidas por leitores de tela.</td>
+</tr>
 </tbody>
 </table>
-<h2 id="testes-para-aplicativos-nativos-android-ios">Testes para Aplicativos Nativos (Android / iOS)</h2>
-<p>Com o crescimento do uso de dispositivos móveis, os aplicativos nativos tornaram-se uma das principais formas de acesso a serviços digitais. Por esse motivo, garantir a acessibilidade nesses ambientes é tão fundamental quanto na web. </p>
-<p>Diferentemente da web, os aplicativos nativos utilizam componentes e bibliotecas específicas de cada sistema operacional, como Android e iOS. Por isso, os testes de acessibilidade devem considerar aspectos próprios dessas plataformas, incluindo a verificação das propriedades de acessibilidade dos elementos, a correta navegação por gestos com leitores de tela ativados, e o comportamento do foco ao abrir telas e componentes dinâmicos.</p>
-<p>De acordo com as Diretrizes de Acessibilidade para Conteúdo Web (WCAG) — aplicáveis também a aplicativos móveis por meio de sua extensão conceitual —, é essencial que elementos interativos tenham rótulos programáticos (labels), que o foco de navegação siga uma ordem lógica e que a experiência com leitores de tela seja fluida e compreensível.</p>
-<p>A avaliação de acessibilidade em aplicativos nativos exige atenção a aspectos específicos da interface e do comportamento dos componentes em ambientes móveis. Esses testes devem garantir que os elementos da aplicação estejam devidamente rotulados, que a navegação por gestos seja funcional, que o agrupamento de elementos respeite a lógica visual e semântica da interface, e que o foco seja posicionado de maneira previsível ao iniciar uma nova tela.</p>
-<p>Os itens a seguir representam pontos críticos no uso de tecnologias assistivas, como TalkBack (Android) e VoiceOver (iOS). Quando essas práticas não são observadas, usuários com deficiência visual, por exemplo, podem enfrentar dificuldades severas para compreender o conteúdo, identificar botões e navegar entre seções do aplicativo.</p>
-<table>
-<thead>
-<tr>
-<th><strong>ITEM DO TESTE</strong></th>
-<th><strong>COMO TESTAR</strong></th>
-<th><strong>WCAG APLICÁVEL</strong></th>
-<th><strong>OBSERVAÇÕES (Texto Padrão para Registro de Erro)</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Labels programáticos estão presentes?</td>
-<td>Verificar se os elementos possuem <code>contentDescription</code> (Android) ou <code>accessibilityLabel</code> (iOS).</td>
-<td>1.1.1</td>
-<td>Indicar botões, imagens ou ícones sem descrição acessível ou com nome genérico.</td>
-</tr>
-<tr>
-<td>A navegação por gestos funciona?</td>
-<td>Ativar TalkBack ou VoiceOver e navegar com gestos nativos.</td>
-<td>2.1.1</td>
-<td>Relatar elementos que não respondem aos gestos ou são ignorados pelo leitor de tela.</td>
-</tr>
-<tr>
-<td>O agrupamento semântico está correto?</td>
-<td>Explorar a tela com leitor de tela e verificar se elementos relacionados são lidos juntos.</td>
-<td>1.3.1</td>
-<td>Informar quando elementos visualmente agrupados são lidos fora de contexto ou de forma isolada.</td>
-</tr>
-<tr>
-<td>O foco  é coerente ao abrir uma tela?</td>
-<td>Abrir uma nova tela e verificar se o foco começa em um título ou campo relevante.</td>
-<td>2.4.3</td>
-<td>Informar telas em que o foco começa em áreas neutras ou fora do conteúdo principal.</td>
-</tr>
-<tr>
-<td>Há feedback em componentes interativos?</td>
-<td>Interagir com botões, campos ou menus e verificar se o feedback é percebido pelo leitor de tela.</td>
-<td>4.1.2, 4.1.3</td>
-<td>Indicar ausência de retorno auditivo ao interagir com elementos importantes da interface.</td>
-</tr>
-<tr>
-<td>Elementos clicáveis têm área adequada?</td>
-<td>Clicar com o botão direito no elemento e selecionar "Inspecionar". Deve têr pelo menos 44x44 px.</td>
-<td>2.5.5</td>
-<td>Listar elementos difíceis de tocar por serem muito pequenos ou com espaçamento insuficiente.</td>
-</tr>
-<tr>
-<td>Elementos não acessíveis são ocultados?</td>
-<td>Verificar se itens puramente visuais são ignorados por leitores de tela.</td>
-<td>1.1.1, 1.3.1</td>
-<td>Relatar quando imagens decorativas são lidas ou elementos não interativos recebem foco indevido.</td>
-</tr>
-<tr>
-<td>CCampos com erro informam o usuário?</td>
-<td>Inserir dados inválidos e verificar se a mensagem de erro é lida pelo leitor de tela.</td>
-<td>3.3.1, 3.3.3</td>
-<td>Informar quando mensagens de erro não são lidas ou visíveis apenas visualmente.</td>
-</tr>
-<tr>
-<td>A leitura do título da tela funciona?</td>
-<td>Ao abrir a tela, verificar se o título é anunciado corretamente pelo leitor de tela.</td>
-<td>2.4.2</td>
-<td>Listar telas que não têm título ou cujo título não é anunciado ao abrir.</td>
-</tr>
-<tr>
-<td>Transições e atualizações são anunciadas?</td>
-<td>Verificar se mudanças de status (ex: carregando, enviado com sucesso) são lidas em tempo real.</td>
-<td>4.1.3, ARIA Live</td>
-<td>Indicar mudanças visuais não anunciadas, como status ou atualizações de conteúdo.</td>
-</tr>
-</tbody>
-</table>
-<p>A tabela a seguir resume os principais testes recomendados, servindo como checklist funcional para auditorias internas de acessibilidade digital:</p>
+<h2 id="testes-para-pdf">Testes para PDF</h2>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">ITEM DO TESTE</th>
 <th style="text-align: left;">COMO TESTAR</th>
-<th style="text-align: left;">DIRETRIZ WCAG / Relevância</th>
-<th style="text-align: left;">TEXTO PADRÃO</th>
+<th style="text-align: left;">WCAG Aplicável</th>
+<th style="text-align: left;">OBSERVAÇÕES (Texto Padrão para Registro de Erro)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Componentes dinâmicos têm nome acessível?</td>
-<td style="text-align: left;">Inspecionar com leitor de tela se carrosséis, abas, menus têm rótulo.</td>
-<td style="text-align: left;">4.1.2, 1.3.1</td>
-<td style="text-align: left;">Indicar componentes sem nome ou com nome genérico.</td>
+<td style="text-align: left;"><strong>Conteúdo Não Textual</strong></td>
+<td style="text-align: left;">Verificar se todas as imagens, gráficos e outros elementos não textuais possuem <strong>texto alternativo (alt text)</strong> ou estão marcados como artefato se forem decorativos.</td>
+<td style="text-align: left;">1.1.1</td>
+<td style="text-align: left;">Apontar imagens ou elementos gráficos sem descrição textual alternativa adequada.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Campos de entrada possuem validação acessível?</td>
-<td style="text-align: left;">Inserir dados errados e verificar se mensagens de erro são lidas.</td>
-<td style="text-align: left;">3.3.1, 3.3.3</td>
-<td style="text-align: left;">Informar se as mensagens não são anunciadas por leitores.</td>
+<td style="text-align: left;"><strong>Informações e Relações</strong></td>
+<td style="text-align: left;">Validar se a <strong>estrutura lógica</strong> do documento (títulos, listas, tabelas, etc.) está corretamente marcada com tags.</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">Informar se a estrutura semântica do PDF não está corretamente taggeada (e.g., títulos não são títulos).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Mudanças visuais são também anunciadas?</td>
-<td style="text-align: left;">Verificar se atualizações em tempo real (ex: status de carregamento) são lidas.</td>
-<td style="text-align: left;">4.1.3, ARIA Live</td>
-<td style="text-align: left;">Indicar mudanças não percebidas pelo leitor de tela.</td>
+<td style="text-align: left;"><strong>Sequência com Significado</strong></td>
+<td style="text-align: left;">Verificar a <strong>ordem de leitura</strong> do conteúdo (tags) para garantir que seja lógica e não confusa.</td>
+<td style="text-align: left;">1.3.2</td>
+<td style="text-align: left;">Descrever trechos do PDF onde a ordem de leitura das tags é ilógica ou inesperada.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Navegação por região (landmarks) funciona corretamente?</td>
-<td style="text-align: left;">Usar atalhos de navegação por regiões (ex: rotor do VoiceOver ou tecla R no NVDA).</td>
-<td style="text-align: left;">1.3.1, 2.4.1</td>
-<td style="text-align: left;">Informar páginas sem landmarks ou com uso inadequado.</td>
+<td style="text-align: left;"><strong>Características Sensoriais</strong></td>
+<td style="text-align: left;">Assegurar que as informações não são transmitidas apenas por características sensoriais (como forma, tamanho, localização, orientação ou som).</td>
+<td style="text-align: left;">1.3.3</td>
+<td style="text-align: left;">Indicar informações que dependem exclusivamente de atributos sensoriais sem alternativas textuais.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Modal (popup) é focado automaticamente e fecha com Esc?</td>
-<td style="text-align: left;">Abrir modal e verificar foco, e se o Esc o fecha.</td>
-<td style="text-align: left;">2.4.3, 2.4.7, 3.2.1</td>
-<td style="text-align: left;">Informar modais que não recebem foco ou não são fecháveis.</td>
+<td style="text-align: left;"><strong>Utilização de Cores</strong></td>
+<td style="text-align: left;">Confirmar que a cor não é o <strong>único meio visual</strong> de transmitir informação, indicar uma ação ou solicitar uma resposta.</td>
+<td style="text-align: left;">1.4.1</td>
+<td style="text-align: left;">Apontar elementos onde a cor é o único diferenciador para transmitir significado ou ação.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Todos os elementos têm nome e função programáticos?</td>
-<td style="text-align: left;">Inspecionar elementos interativos com ferramenta como o Accessibility Tree.</td>
-<td style="text-align: left;">4.1.2</td>
-<td style="text-align: left;">Listar elementos sem acessibilidade semântica.</td>
+<td style="text-align: left;"><strong>Contraste (Mínimo)</strong></td>
+<td style="text-align: left;">Utilizar um analisador de contraste para verificar o <strong>contraste mínimo</strong> entre o texto e seu plano de fundo.</td>
+<td style="text-align: left;">1.4.3</td>
+<td style="text-align: left;">Listar textos no PDF com contraste insuficiente em relação à cor de fundo.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Existe bypass de blocos repetitivos?</td>
-<td style="text-align: left;">Verificar se existe link de pular para o conteúdo principal.</td>
+<td style="text-align: left;"><strong>Imagens de Texto</strong></td>
+<td style="text-align: left;">Evitar o uso de <strong>texto incorporado em imagens</strong> sempre que possível; o texto deve ser selecionável e pesquisável.</td>
+<td style="text-align: left;">1.4.5</td>
+<td style="text-align: left;">Informar se há texto em formato de imagem que deveria ser texto real (selecionável).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contraste sem texto</strong></td>
+<td style="text-align: left;">Verificar o <strong>contraste de elementos gráficos</strong> essenciais e componentes de interface de usuário.</td>
+<td style="text-align: left;">1.4.11</td>
+<td style="text-align: left;">Indicar elementos gráficos que não possuem contraste suficiente em relação ao fundo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Teclado</strong></td>
+<td style="text-align: left;">Testar a navegabilidade e interatividade de formulários ou elementos clicáveis usando <strong>apenas o teclado</strong>.</td>
+<td style="text-align: left;">2.1.1</td>
+<td style="text-align: left;">Apontar componentes interativos do PDF (como campos de formulário) que não são operáveis via teclado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sem Bloqueio do Teclado</strong></td>
+<td style="text-align: left;">Garantir que, se houver um atalho de teclado com uma única tecla, ele possa ser desativado ou remapeado.</td>
+<td style="text-align: left;">2.1.2</td>
+<td style="text-align: left;">Listar atalhos de teclado de uma única tecla que bloqueiam o usuário ou não podem ser desativados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ignorar Blocos</strong></td>
+<td style="text-align: left;">Verificar a existência de <strong>links ou marcadores</strong> que permitam pular blocos de conteúdo repetitivos (como cabeçalhos e rodapés fixos).</td>
 <td style="text-align: left;">2.4.1</td>
-<td style="text-align: left;">Indicar ausência de atalho para o conteúdo principal.</td>
+<td style="text-align: left;">Indicar a ausência de um mecanismo para pular blocos de conteúdo repetitivos.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Conteúdo audiovisual possui legendas ou transcrição?</td>
-<td style="text-align: left;">Verificar vídeos incorporados e seus recursos de acessibilidade.</td>
-<td style="text-align: left;">1.2.2, 1.2.1</td>
-<td style="text-align: left;">Listar vídeos sem legendas ou alternativas.</td>
+<td style="text-align: left;"><strong>Página com Título</strong></td>
+<td style="text-align: left;">Confirmar se o documento possui um <strong>título descritivo</strong> nas suas propriedades (Metadados do PDF).</td>
+<td style="text-align: left;">2.4.2</td>
+<td style="text-align: left;">Informar se o título do documento PDF está ausente ou é genérico.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tamanhos de fonte e zoom não quebram layout?</td>
-<td style="text-align: left;">Aumentar zoom (até 200%) ou usar fontes grandes no navegador.</td>
-<td style="text-align: left;">1.4.4</td>
-<td style="text-align: left;">Informar se elementos se sobrepõem ou somem.</td>
+<td style="text-align: left;"><strong>Ordem do Foco</strong></td>
+<td style="text-align: left;">Assegurar que a <strong>ordem de foco</strong> dos elementos interativos (como campos de formulário) segue uma sequência lógica.</td>
+<td style="text-align: left;">2.4.3</td>
+<td style="text-align: left;">Descrever campos interativos onde a ordem de tabulação/foco não é lógica ou previsível.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Áreas clicáveis têm tamanho suficiente?</td>
-<td style="text-align: left;">Clicar com o botão direito no elemento e selecionar "Inspecionar". Deve têr pelo menos 44x44 px</td>
-<td style="text-align: left;">2.5.5</td>
-<td style="text-align: left;">Indicar alvos de toque muito pequenos.</td>
+<td style="text-align: left;"><strong>Finalidade do Link (Em Contexto)</strong></td>
+<td style="text-align: left;">Verificar se os <strong>links são descritivos</strong> em seu contexto, permitindo que o usuário entenda sua finalidade.</td>
+<td style="text-align: left;">2.4.4</td>
+<td style="text-align: left;">Listar links com texto genérico (ex: "clique aqui") que não fornecem contexto sobre seu destino.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Várias Formas (múltiplos caminhos)</strong></td>
+<td style="text-align: left;">Garantir que há <strong>múltiplas formas</strong> de encontrar as informações no documento (ex: índice, marcadores, pesquisa).</td>
+<td style="text-align: left;">2.4.5</td>
+<td style="text-align: left;">Informar se o PDF oferece apenas uma forma de acessar as informações importantes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cabeçalhos e Rótulos</strong></td>
+<td style="text-align: left;">Assegurar que <strong>cabeçalhos (headings)</strong> e rótulos de formulário são informativos e descrevem o tópico ou a finalidade do componente.</td>
+<td style="text-align: left;">2.4.6</td>
+<td style="text-align: left;">Apontar cabeçalhos ou rótulos de formulário que não são descritivos ou estão ausentes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Idioma da Página</strong></td>
+<td style="text-align: left;">Verificar se o <strong>idioma principal</strong> do documento está definido nas propriedades do PDF.</td>
+<td style="text-align: left;">3.1.1</td>
+<td style="text-align: left;">Informar se o idioma principal do PDF não está especificado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Idioma das Partes</strong></td>
+<td style="text-align: left;">Confirmar se as <strong>mudanças de idioma</strong> em partes do texto estão marcadas corretamente.</td>
+<td style="text-align: left;">3.1.2</td>
+<td style="text-align: left;">Indicar trechos do PDF em outro idioma que não estão corretamente marcados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Em Entrada</strong></td>
+<td style="text-align: left;">Assegurar que qualquer mudança de contexto ao preencher um formulário é <strong>iniciada pelo usuário</strong> ou ele é alertado sobre ela.</td>
+<td style="text-align: left;">3.2.2</td>
+<td style="text-align: left;">Listar casos onde a conclusão de um campo de formulário causa uma mudança de contexto inesperada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Navegação Consistente</strong></td>
+<td style="text-align: left;">Verificar se a <strong>navegação</strong> (links, botões) e os elementos de identificação (cabeçalhos, rodapés) são consistentes.</td>
+<td style="text-align: left;">3.2.3</td>
+<td style="text-align: left;">Apontar elementos de navegação ou identificação que não são consistentes em todo o PDF.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Identificação do Erro</strong></td>
+<td style="text-align: left;">Se ocorrerem erros na entrada de dados (em formulários), verificar se o <strong>erro é identificado</strong> claramente e descrito em texto.</td>
+<td style="text-align: left;">3.3.1</td>
+<td style="text-align: left;">Informar se os erros em campos de formulário não são claramente identificados para o usuário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rótulos ou Instruções</strong></td>
+<td style="text-align: left;">Confirmar que os <strong>campos de formulário</strong> possuem rótulos ou instruções claras sobre o formato da entrada necessária.</td>
+<td style="text-align: left;">3.3.2</td>
+<td style="text-align: left;">Listar campos de formulário que não fornecem rótulos ou instruções claras.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sugestão de Erro</strong></td>
+<td style="text-align: left;">Se um erro de entrada for detectado, verificar se o sistema fornece <strong>sugestões</strong> de como corrigi-lo.</td>
+<td style="text-align: left;">3.3.3</td>
+<td style="text-align: left;">Apontar campos de formulário onde o sistema não oferece sugestões para correção de erros.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nome, Função, Valor</strong></td>
+<td style="text-align: left;">Assegurar que todos os componentes da interface (especialmente em formulários interativos) têm <strong>nome, função e valor programáticos</strong> definidos.</td>
+<td style="text-align: left;">4.1.2</td>
+<td style="text-align: left;">Listar componentes interativos do PDF que não têm nome, função ou valor programáticos definidos (ex: botões sem rótulo).</td>
 </tr>
 </tbody>
 </table>
