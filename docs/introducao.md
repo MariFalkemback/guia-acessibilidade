@@ -1,10 +1,10 @@
 # Introdução à Acessibilidade Digital
-
+---
 ## Definição de Acessibilidade Digital
 
 A acessibilidade digital compreende a prática de projetar e desenvolver produtos digitais (websites, aplicativos, sistemas) de maneira que possam ser utilizados de forma eficiente e autônoma por todas as pessoas, independentemente de suas habilidades ou deficiências, incluindo idosos, pessoas autistas, com deficiência visual, auditiva, motora, cognitiva, ou seja, qualquer pessoa que enfrente barreira no uso de tecnologia. Assegurando que o acesso e a interação com o conteúdo digital sejam equitativos.
 
-
+---
 ## Por que a acessibilidade ainda não é prioridade?
 
 Estudos mostram que mais de 95% das páginas da internet apresentam problemas de acessibilidade.
@@ -13,6 +13,7 @@ Apesar dos avanços legislativos e técnicos, ainda há muitos desafios na efeti
 
 Outro fator crítico é a percepção equivocada de que tornar um sistema acessível exige altos investimentos ou representa um esforço técnico desproporcional. No entanto, quando a acessibilidade é considerada desde o início do projeto, ela pode ser integrada de forma mais eficiente e com menor custo, beneficiando não apenas pessoas com deficiência, mas todos os usuários, inclusive aqueles que acessam conteúdos em situações de limitação temporária, como ambientes com muito barulho, pouca iluminação ou uso de dispositivos móveis com conexão instável.
 
+---
 ## Por que testar acessibilidade é essencial?
 
 No desenvolvimento de sistemas, acessibilidade não é apenas uma boa prática — é uma exigência legal e ética. A acessibilidade digital é reconhecida como um direito por instituições como a ONU, e está prevista em leis brasileiras, como a **[Lei Brasileira de Inclusão](#lbi)** (nº 13.146/2015), nas diretrizes internacionais **[WCAG](#wcag)** (Web Content Accessibility Guidelines), mantidas pelo W3C, e no **[e-MAG](#e-MAG)** (Modelo de Acessibilidade em Governo Eletrônico), mantido pelo governo brasileiro.
@@ -28,7 +29,7 @@ Além de promover o acesso equitativo, a acessibilidade também oferece benefíc
 
 Além disso, quando se considera a acessibilidade desde as etapas iniciais do desenvolvimento de um sistema, os custos de implementação são significativamente menores do que se for necessário realizar correções posteriores. Essa abordagem preventiva também demonstra compromisso social e respeito à diversidade, valores cada vez mais valorizados por consumidores, alunos e cidadãos em geral.
 
-
+---
 ## Glossário de Acessibilidade Digital: WCAG, eMAG, LBI, Tecnologia Assistiva
 
 ### <h2 id="lbi">Lei Brasileira de Inclusão da Pessoa com Deficiência (LBI)</h2>
@@ -56,6 +57,22 @@ As WCAG (Diretrizes de Acessibilidade para Conteúdo Web) constituem um conjunto
 Esses quatro princípios servem como base para a criação de experiências digitais inclusivas, oferecendo diretrizes claras para que desenvolvedores e designers construam conteúdos acessíveis a todas as pessoas, independentemente de suas limitações.
 
 As WCAG estão divididas em três níveis de conformidade: **A (mínimo)**, **AA (médio)** e **AAA (avançado)**. O nível AA é o mais amplamente recomendado, sendo considerado o padrão ideal para a maioria dos sites e sistemas, pois equilibra rigor técnico e viabilidade prática. Cada nível estabelece critérios de sucesso que devem ser seguidos para garantir que os conteúdos atendam às necessidades de acessibilidade de diferentes perfis de usuários.
+
+A WCAG não é o único documento de acessibilidade mantido pelo W3C. Existem outras normas importantes que complementam esse ecossistema:
+
+- **UAAG**: trata da acessibilidade nos agentes de usuário (como navegadores e leitores de tela).
+- **ATAG**: orienta sobre ferramentas de autoria e edição de conteúdo acessível.
+- **WAI-ARIA**: define padrões para tornar componentes dinâmicos (como menus, modais, carrosséis) acessíveis via HTML.
+
+Não nos aprofundaremos nessas diretrizes aqui, mas é importante saber que elas existem — e que navegadores, editores e frameworks também devem segui-las para garantir uma web verdadeiramente acessível.
+
+#### Links Oficiais
+
+- [Visão Geral das WCAG (em inglês)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Tradução Oficial da WCAG 2.1 (pt-BR - W3C Brasil)](https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/)
+- [Outras Normas: UAAG, ATAG, WAI-ARIA, etc (em inglês)](https://www.w3.org/WAI/standards-guidelines/)
+- [Guia Rápido da WCAG 2.2 em português](https://guia-wcag.com/)
+---
 
 ### <h2 id="e-MAG">e-MAG (Modelo de Acessibilidade em Governo Eletrônico)</h2>
 

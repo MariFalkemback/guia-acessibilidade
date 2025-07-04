@@ -10,7 +10,9 @@ Elementos acessíveis devem ser considerados desde as fases iniciais do projeto,
 
 A acessibilidade deve realmente ser pensada desde a concepção do projeto, para que alternativas inclusivas sejam implementadas desde as regras de negócio, evitando surpresas no final do ciclo de desenvolvimento.
 
-### Cenário de Exemplo: Sistema bancário com autenticação por biometria facial
+### Cenário de Exemplo: 
+
+- Sistema bancário com autenticação por biometria facial
 
 **Decisão de negócio:**  
 O Product Owner propõe que os usuários façam login e validem operações usando reconhecimento facial como medida de segurança.
