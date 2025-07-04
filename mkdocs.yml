@@ -1,0 +1,39 @@
+site_name: Guia de Testes de Acessibilidade Digital
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    - toc.integrate  # isso ativa o índice lateral por seção
+    - skip-to-content
+    - content.code.copy  # melhora usabilidade
+    - navigation.instant
+    - search.highlight
+    - skip-to-content    
+
+extra_css:
+  - styles/extra.css
+
+nav:
+  - Início: index.md
+  - Introdução à Acessibilidade Digital: introducao.md
+  - Abordagem Colaborativa: abordagem_colaborativa.md
+  - Ferramentas Recomendadas: ferramentas.md
+  - Como Diferenciar Defeitos de Acessiblidade: diferenciar_acessibilidade.md  
+  - Classificação de Defeitos em Testes de Acessibilidade: classificacao_defeitos.md
+  - Verificações Comuns Por Tipo de Deficiência: verificacoes_por_deficiencia.md
+  - Definition of Ready: dor.md
+  - Roteiros de Teste: roteiros.md  
+  - Boas Práticas: boas_praticas.md
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - attr_list
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js

@@ -1,0 +1,11 @@
+# Como Diferenciar Defeitos de Acessiblidade
+
+Durante os testes de acessibilidade, é comum identificar também falhas que não se encaixam diretamente como erros de acessibilidade, mas que afetam a experiência do usuário. Por isso, é importante que a equipe saiba como encaminhar cada tipo de defeito corretamente.
+
+A classificação a seguir apresenta três tipos principais de defeitos que surgem frequentemente em testes de acessibilidade, com base em sua natureza técnica e na forma como afetam a interação do usuário com a aplicação:
+
+| Tipo de Defeito   | Descrição                                                                                     | Observações                                                                                                        | Encaminhamento                                                                                   |
+|:------------------|:----------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
+| Agente de Usuário | Problemas de compatibilidade com leitores de tela, navegadores ou outras tecnologias assistivas. | Não representam falhas diretas da aplicação, mas sim da sua interação com o ambiente do usuário.                 | Documentar para conhecimento da equipe. Não abrir como bug de acessibilidade.                    |
+| Usabilidade       | Dificuldades de navegação ou compreensão da interface.                                       | Considerados problemas de acessibilidade se impactarem especificamente usuários com deficiência.                 | Direcionar para o time de Design/UX para ajustes de experiência e estrutura de navegação.        |
+| Funcional         | Erros que impedem a navegação, o envio de formulários ou a leitura de conteúdo essencial.     | Impactam diretamente a acessibilidade e a capacidade de utilização do produto.                                   | Reportar ao time de QA ou Desenvolvimento para correção técnica.                                 |
