@@ -19,6 +19,8 @@ Refere-se a falhas com impacto limitado na experiência geral. Embora possam dif
 
 ## Alto
 
-: Envolve falhas críticas que impedem o acesso completo a conteúdo ou funcionalidades essenciais. Esse tipo de barreira compromete diretamente o direito de acesso à informação e pode excluir totalmente determinados perfis de usuários. Exemplo: botão de envio de formulário que não pode ser acionado por teclado ou não é identificado por [leitores de tela](introducao.md#leitores-tela).
+Envolve falhas críticas que impedem o acesso completo a conteúdo ou funcionalidades essenciais. Esse tipo de barreira compromete diretamente o direito de acesso à informação e pode excluir totalmente determinados perfis de usuários. 
+
+Exemplo: botão de envio de formulário que não pode ser acionado por teclado ou não é identificado por [leitores de tela](introducao.md#leitores-tela).
 
 A definição do nível de risco, portanto, é um elemento estratégico dentro do processo de auditoria de acessibilidade. Ela permite alinhar esforços de correção com os princípios das WCAG e com os objetivos de inclusão, usabilidade e conformidade legal.

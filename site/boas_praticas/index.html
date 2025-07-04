@@ -403,6 +403,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Boas Práticas
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -414,6 +427,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-desde-o-inicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização desde o Início
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização desde o Início">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cenario-de-exemplo-sistema-bancario-com-autenticacao-por-biometria-facial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário de Exemplo: Sistema bancário com autenticação por biometria facial
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registro-adequado-de-defeitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registro adequado de defeitos:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participacao-de-pessoas-com-deficiencia-pcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participação de pessoas com deficiência (PcD):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-viva-e-colaborativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentação viva e colaborativa:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -437,28 +520,37 @@
 
 <h1 id="boas-praticas">Boas Práticas</h1>
 <p>Com base nas análises e práticas abordadas neste trabalho, recomenda-se que equipes de design, desenvolvimento e qualidade incorporem as seguintes ações de forma sistemática:</p>
-<p>•   <strong>Priorização desde o início</strong>: Elementos acessíveis devem ser considerados desde as fases iniciais do projeto, principalmente na construção do design system. Componentes como botões, formulários e mensagens devem ser planejados com base em padrões acessíveis, evitando retrabalho posterior e promovendo consistência ao longo da aplicação.</p>
+<hr />
+<h2 id="priorizacao-desde-o-inicio">Priorização desde o Início</h2>
+<p>Elementos acessíveis devem ser considerados desde as fases iniciais do projeto, principalmente na construção do design system. Componentes como botões, formulários e mensagens devem ser planejados com base em padrões acessíveis, evitando retrabalho posterior e promovendo consistência ao longo da aplicação.</p>
 <p>A acessibilidade deve realmente ser pensada desde a concepção do projeto, para que alternativas inclusivas sejam implementadas desde as regras de negócio, evitando surpresas no final do ciclo de desenvolvimento.</p>
-<p>Cenário de Exemplo: Sistema bancário com autenticação por biometria facial</p>
-<p>Decisão de negócio na concepção:
-O PO propõe que os usuários farão login e validação de operações usando reconhecimento facial como medida de segurança.</p>
-<p>Visão com acessibilidade desde o início:
-Sabendo que:</p>
-<p>Usuários com deficiência visual não conseguirão posicionar o rosto corretamente sem auxílio.</p>
-<p>Usuários com deformidades faciais, paralisias ou mesmo pessoas trans que passaram por mudanças recentes podem não ser reconhecidas corretamente.</p>
-<p>Pessoas com deficiência motora podem ter dificuldade em alinhar a câmera.</p>
-<p>Decisão tomada ainda nas regras de negócio:
-O projeto já prevê alternativas viáveis, como:</p>
-<p>Autenticação por token (enviado por SMS, e-mail ou app autenticador).</p>
-<p>Login por senha + segundo fator.</p>
-<p>Atendimento humano como fallback (ex: validação por telefone com perguntas de segurança).</p>
-<p>Impacto:
-Quando o time for implementar, já sabe que:</p>
-<p>O recurso facial é opcional e não exclusivo.</p>
-<p>O fluxo de autenticação deve permitir troca de método com facilidade e sem barreiras visuais/motoras.</p>
-<p>•   <strong>Registro adequado de defeitos</strong>: Barreiras de acessibilidade identificadas em testes devem ser tratadas com a mesma seriedade que outros bugs funcionais. Para isso, é fundamental criar issues específicas nos sistemas de gestão de tarefas, descrevendo claramente a falha, o impacto para o usuário e os critérios de aceitação da correção.</p>
-<p>•   <strong>Participação de pessoas com deficiência (PcD)</strong>: Sempre que possível, é recomendável incluir usuários com deficiência nos ciclos de testes de usabilidade e acessibilidade. A experiência prática desses usuários fornece insights valiosos que muitas vezes não são identificados por ferramentas automáticas ou testadores sem vivência direta com tecnologias assistivas.</p>
-<p>•   <strong>Documentação viva e colaborativa</strong>: Manter uma base de conhecimento atualizada com exemplos de boas práticas, padrões adotados e lições aprendidas é essencial para o amadurecimento organizacional em acessibilidade. Essa documentação deve ser de fácil acesso e continuamente aprimorada à medida que novos aprendizados e requisitos surgem. </p>
+<h3 id="cenario-de-exemplo-sistema-bancario-com-autenticacao-por-biometria-facial">Cenário de Exemplo: Sistema bancário com autenticação por biometria facial</h3>
+<p><strong>Decisão de negócio:</strong><br />
+O Product Owner propõe que os usuários façam login e validem operações usando reconhecimento facial como medida de segurança.</p>
+<p><strong>Visão com acessibilidade desde o início:</strong></p>
+<ul>
+<li>Usuários com deficiência visual não conseguem posicionar o rosto corretamente sem auxílio.</li>
+<li>Pessoas com deformidades faciais, paralisias ou mudanças na aparência podem não ser reconhecidas.</li>
+<li>Usuários com deficiência motora podem ter dificuldade para alinhar a câmera.</li>
+</ul>
+<p><strong>Decisão tomada ainda nas regras de negócio: O projeto já prevê alternativas viáveis, como:</strong></p>
+<ul>
+<li>Autenticação por token (SMS, e-mail ou app autenticador).</li>
+<li>Login por senha + segundo fator.</li>
+<li>Atendimento humano como fallback (ex: telefone com perguntas de segurança).</li>
+</ul>
+<p><strong>Impacto prático na implementação: Quando o time for implementar, já sabe que:</strong></p>
+<ul>
+<li>O recurso facial será opcional, não obrigatório.</li>
+<li>O fluxo permitirá troca de método sem barreiras visuais ou motoras.</li>
+</ul>
+<hr />
+<h2 id="registro-adequado-de-defeitos">Registro adequado de defeitos:</h2>
+<p>Barreiras de acessibilidade identificadas em testes devem ser tratadas com a mesma seriedade que outros bugs funcionais. Para isso, é fundamental criar issues específicas nos sistemas de gestão de tarefas, descrevendo claramente a falha, o impacto para o usuário e os critérios de aceitação da correção.</p>
+<h2 id="participacao-de-pessoas-com-deficiencia-pcd">Participação de pessoas com deficiência (PcD):</h2>
+<p>Sempre que possível, é recomendável incluir usuários com deficiência nos ciclos de testes de usabilidade e acessibilidade. A experiência prática desses usuários fornece insights valiosos que muitas vezes não são identificados por ferramentas automáticas ou testadores sem vivência direta com tecnologias assistivas.</p>
+<h2 id="documentacao-viva-e-colaborativa">Documentação viva e colaborativa:</h2>
+<p>Manter uma base de conhecimento atualizada com exemplos de boas práticas, padrões adotados e lições aprendidas é essencial para o amadurecimento organizacional em acessibilidade. Essa documentação deve ser de fácil acesso e continuamente aprimorada à medida que novos aprendizados e requisitos surgem. </p>
 
 
 
