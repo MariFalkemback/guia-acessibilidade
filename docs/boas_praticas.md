@@ -10,7 +10,7 @@ Elementos acessíveis devem ser considerados desde as fases iniciais do projeto,
 
 A acessibilidade deve realmente ser pensada desde a concepção do projeto, para que alternativas inclusivas sejam implementadas desde as regras de negócio, evitando surpresas no final do ciclo de desenvolvimento.
 
-### Cenário de Exemplo: 
+### Cenário de Exemplo 
 
 - Sistema bancário com autenticação por biometria facial
 
@@ -36,11 +36,36 @@ O Product Owner propõe que os usuários façam login e validem operações usan
 
 ---
 
-## Registro adequado de defeitos: 
+## Definição clara da cobertura dos testes de acessibilidade  
+**Boa prática para times de design, desenvolvimento e qualidade**
+
+Para garantir a qualidade e a consistência dos testes, recomenda-se estabelecer um cenário padrão para avaliação da acessibilidade, incluindo parâmetros como:
+
+| Parâmetro           | Exemplo                                              |
+|--------------------|-----------------------------------------------------|
+| **Dispositivo**      | Laptop ou desktop comum, sem tela sensível ao toque. Entrada: teclado e mouse físicos. |
+| **Sistema operacional** | Windows 10                                         |
+| **Navegador**         | Google Chrome na versão mais recente                 |
+| **Tecnologia assistiva** | Leitor de tela NVDA na versão mais recente         |
+
+**Critérios da WCAG considerados nos testes**
+
+| Critérios              | Descrição                                           |
+|---------------------|----------------------------------------------------|
+| Cobertos integralmente | Quantidade e quais critérios WCAG estão cobertos   |
+| Parcialmente cobertos | Quantidade e quais critérios WCAG estão parcialmente cobertos |
+| Fora do escopo        | Quantidade, quais critérios WCAG estão fora do escopo e justificativa |
+
+Essa padronização assegura que os testes sejam replicáveis e facilita a compreensão do alcance dos testes realizados, deixando claro quais critérios não são aplicáveis ao contexto do projeto.
+
+
+---
+
+## Registro adequado de defeitos 
 Barreiras de acessibilidade identificadas em testes devem ser tratadas com a mesma seriedade que outros bugs funcionais. Para isso, é fundamental criar issues específicas nos sistemas de gestão de tarefas, descrevendo claramente a falha, o impacto para o usuário e os critérios de aceitação da correção.
 
-## Participação de pessoas com deficiência (PcD): 
+## Participação de pessoas com deficiência (PcD) 
 Sempre que possível, é recomendável incluir usuários com deficiência nos ciclos de testes de usabilidade e acessibilidade. A experiência prática desses usuários fornece insights valiosos que muitas vezes não são identificados por ferramentas automáticas ou testadores sem vivência direta com tecnologias assistivas.
 
-## Documentação viva e colaborativa: 
+## Documentação viva e colaborativa 
 Manter uma base de conhecimento atualizada com exemplos de boas práticas, padrões adotados e lições aprendidas é essencial para o amadurecimento organizacional em acessibilidade. Essa documentação deve ser de fácil acesso e continuamente aprimorada à medida que novos aprendizados e requisitos surgem. 
