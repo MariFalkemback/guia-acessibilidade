@@ -456,7 +456,7 @@
           <li class="md-nav__item">
   <a href="#cenario-de-exemplo" class="md-nav__link">
     <span class="md-ellipsis">
-      Cenário de Exemplo:
+      Cenário de Exemplo
     </span>
   </a>
   
@@ -468,9 +468,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#definicao-clara-da-cobertura-dos-testes-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição clara da cobertura dos testes de acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#registro-adequado-de-defeitos" class="md-nav__link">
     <span class="md-ellipsis">
-      Registro adequado de defeitos:
+      Registro adequado de defeitos
     </span>
   </a>
   
@@ -479,7 +488,7 @@
         <li class="md-nav__item">
   <a href="#participacao-de-pessoas-com-deficiencia-pcd" class="md-nav__link">
     <span class="md-ellipsis">
-      Participação de pessoas com deficiência (PcD):
+      Participação de pessoas com deficiência (PcD)
     </span>
   </a>
   
@@ -488,7 +497,7 @@
         <li class="md-nav__item">
   <a href="#documentacao-viva-e-colaborativa" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentação viva e colaborativa:
+      Documentação viva e colaborativa
     </span>
   </a>
   
@@ -524,7 +533,7 @@
 <h2 id="priorizacao-desde-o-inicio">Priorização desde o Início</h2>
 <p>Elementos acessíveis devem ser considerados desde as fases iniciais do projeto, principalmente na construção do design system. Componentes como botões, formulários e mensagens devem ser planejados com base em padrões acessíveis, evitando retrabalho posterior e promovendo consistência ao longo da aplicação.</p>
 <p>A acessibilidade deve realmente ser pensada desde a concepção do projeto, para que alternativas inclusivas sejam implementadas desde as regras de negócio, evitando surpresas no final do ciclo de desenvolvimento.</p>
-<h3 id="cenario-de-exemplo">Cenário de Exemplo:</h3>
+<h3 id="cenario-de-exemplo">Cenário de Exemplo</h3>
 <ul>
 <li>Sistema bancário com autenticação por biometria facial</li>
 </ul>
@@ -548,11 +557,65 @@ O Product Owner propõe que os usuários façam login e validem operações usan
 <li>O fluxo permitirá troca de método sem barreiras visuais ou motoras.</li>
 </ul>
 <hr />
-<h2 id="registro-adequado-de-defeitos">Registro adequado de defeitos:</h2>
+<h2 id="definicao-clara-da-cobertura-dos-testes-de-acessibilidade">Definição clara da cobertura dos testes de acessibilidade</h2>
+<p><strong>Boa prática para times de design, desenvolvimento e qualidade</strong></p>
+<p>Para garantir a qualidade e a consistência dos testes, recomenda-se estabelecer um cenário padrão para avaliação da acessibilidade, incluindo parâmetros como:</p>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dispositivo</strong></td>
+<td>Laptop ou desktop comum, sem tela sensível ao toque. Entrada: teclado e mouse físicos.</td>
+</tr>
+<tr>
+<td><strong>Sistema operacional</strong></td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td><strong>Navegador</strong></td>
+<td>Google Chrome na versão mais recente</td>
+</tr>
+<tr>
+<td><strong>Tecnologia assistiva</strong></td>
+<td>Leitor de tela NVDA na versão mais recente</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critérios da WCAG considerados nos testes</strong></p>
+<table>
+<thead>
+<tr>
+<th>Critérios</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cobertos integralmente</td>
+<td>Quantidade e quais critérios WCAG estão cobertos</td>
+</tr>
+<tr>
+<td>Parcialmente cobertos</td>
+<td>Quantidade e quais critérios WCAG estão parcialmente cobertos</td>
+</tr>
+<tr>
+<td>Fora do escopo</td>
+<td>Quantidade, quais critérios WCAG estão fora do escopo e justificativa</td>
+</tr>
+</tbody>
+</table>
+<p>Essa padronização assegura que os testes sejam replicáveis e facilita a compreensão do alcance dos testes realizados, deixando claro quais critérios não são aplicáveis ao contexto do projeto.</p>
+<hr />
+<h2 id="registro-adequado-de-defeitos">Registro adequado de defeitos</h2>
 <p>Barreiras de acessibilidade identificadas em testes devem ser tratadas com a mesma seriedade que outros bugs funcionais. Para isso, é fundamental criar issues específicas nos sistemas de gestão de tarefas, descrevendo claramente a falha, o impacto para o usuário e os critérios de aceitação da correção.</p>
-<h2 id="participacao-de-pessoas-com-deficiencia-pcd">Participação de pessoas com deficiência (PcD):</h2>
+<h2 id="participacao-de-pessoas-com-deficiencia-pcd">Participação de pessoas com deficiência (PcD)</h2>
 <p>Sempre que possível, é recomendável incluir usuários com deficiência nos ciclos de testes de usabilidade e acessibilidade. A experiência prática desses usuários fornece insights valiosos que muitas vezes não são identificados por ferramentas automáticas ou testadores sem vivência direta com tecnologias assistivas.</p>
-<h2 id="documentacao-viva-e-colaborativa">Documentação viva e colaborativa:</h2>
+<h2 id="documentacao-viva-e-colaborativa">Documentação viva e colaborativa</h2>
 <p>Manter uma base de conhecimento atualizada com exemplos de boas práticas, padrões adotados e lições aprendidas é essencial para o amadurecimento organizacional em acessibilidade. Essa documentação deve ser de fácil acesso e continuamente aprimorada à medida que novos aprendizados e requisitos surgem. </p>
 
 
