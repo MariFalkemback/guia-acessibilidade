@@ -9,7 +9,8 @@ theme:
     - navigation.instant
     - search.highlight
     - skip-to-content    
-
+    - navigation.footer
+    
 extra_css:
   - styles/extra.css
 

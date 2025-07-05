@@ -66,12 +66,14 @@ A WCAG não é o único documento de acessibilidade mantido pelo W3C. Existem ou
 
 Não nos aprofundaremos nessas diretrizes aqui, mas é importante saber que elas existem — e que navegadores, editores e frameworks também devem segui-las para garantir uma web verdadeiramente acessível.
 
-#### Links Oficiais
+<h4>Links Oficiais</h4>
+<ul>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">Visão Geral das WCAG (em inglês)</a></li>
+  <li><a href="https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/" target="_blank" rel="noopener noreferrer">Tradução Oficial da WCAG 2.1 (pt-BR - W3C Brasil)</a></li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/" target="_blank" rel="noopener noreferrer">Outras Normas: UAAG, ATAG, WAI-ARIA, etc (em inglês)</a></li>
+  <li><a href="https://guia-wcag.com/" target="_blank" rel="noopener noreferrer">Guia Rápido da WCAG 2.2 em português</a></li>
+</ul>
 
-- [Visão Geral das WCAG (em inglês)](https://www.w3.org/WAI/standards-guidelines/wcag/)
-- [Tradução Oficial da WCAG 2.1 (pt-BR - W3C Brasil)](https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/)
-- [Outras Normas: UAAG, ATAG, WAI-ARIA, etc (em inglês)](https://www.w3.org/WAI/standards-guidelines/)
-- [Guia Rápido da WCAG 2.2 em português](https://guia-wcag.com/)
 ---
 
 ### <h2 id="e-MAG">e-MAG (Modelo de Acessibilidade em Governo Eletrônico)</h2>
