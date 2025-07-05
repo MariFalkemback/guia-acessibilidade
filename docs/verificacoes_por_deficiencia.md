@@ -16,7 +16,7 @@ A aplicação dessas verificações permite identificar falhas específicas e pr
 
 ## Defeitos Mais Comuns de Acessibilidade
 
-| Critério WCAG | Erros Mais Comuns | Descrição | Impacto para o Usuário (Tipo de Deficiência) | Como Testar |
+| Critério WCAG | Erros Mais Comuns | Descrição | Impacto para o Usuário  | Como Testar |
 |:--------------|:-------------------|:----------|:-------------------------------------------|:------------|
 | **4.1.2 - Semântica** | - Label de botão lido de forma diferente do visual<br>- Label de radio button lido duas vezes<br>- Botão identificado como link e vice-versa | A semântica sempre deve estar correta na leitura de todos os elementos. | **Usuários de leitores de tela** terão dificuldade na navegação e identificação/localização de elementos. | **Navegue com um leitor de telas (NVDA, VoiceOver) e compare a leitura com o que é visível.** |
 | **1.1.3 - Mensagens de Status** | - Mensagens de erros não lidas automaticamente<br>- Carregamento de novos campos na tela não é informado | Qualquer mensagem exibida na tela após a execução de uma ação deve ser lida automaticamente pelo leitor de telas. | **Usuários de leitores de tela** não recebem feedback das alterações na tela e mensagens relevantes. | **Interaja com formulários (envie com erros) ou ative funcionalidades que carregam novo conteúdo (ex: filtros, paginação) e ouça com leitor de telas.** |

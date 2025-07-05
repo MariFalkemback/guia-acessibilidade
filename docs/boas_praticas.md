@@ -38,24 +38,15 @@ O Product Owner propõe que os usuários façam login e validem operações usan
 
 ## Definição clara da cobertura padrão dos testes de acessibilidade
   
-**Boa prática para times de design, desenvolvimento e qualidade**
+Para garantir a qualidade e a consistência dos testes, recomenda-se definir um cenário padrão para avaliação da acessibilidade. Esse cenário deve incluir os seguintes parâmetros: 
 
-Para garantir a qualidade e a consistência dos testes, recomenda-se estabelecer um cenário padrão para avaliação da acessibilidade, incluindo parâmetros como:
+dispositivo utilizado, sistema operacional e sua versão, navegador e versão, tecnologia assistiva empregada e versão, além do leitor de pdf e sua versão quando aplicável. 
 
-| Parâmetro           | Exemplo                                              |
-|--------------------|-----------------------------------------------------|
-| **Dispositivo**      | Laptop ou desktop comum, sem tela sensível ao toque. Entrada: teclado e mouse físicos. |
-| **Sistema operacional** | Windows 10                                         |
-| **Navegador**         | Google Chrome na versão mais recente                 |
-| **Tecnologia assistiva** | Leitor de tela NVDA na versão mais recente         |
-| **Leitor de PDF**        | Adobe Reader mais recente |
-**Critérios da WCAG considerados nos testes**
+Também é essencial listar quais critérios da WCAG são considerados  nos testes, especificando:
 
-| Critérios              | Descrição                                           |
-|---------------------|----------------------------------------------------|
-| Cobertos integralmente | Quantidade e quais critérios WCAG estão cobertos   |
-| Parcialmente cobertos | Quantidade e quais critérios WCAG estão parcialmente cobertos |
-| Fora do escopo        | Quantidade, quais critérios WCAG estão fora do escopo e justificativa |
+- Quais critérios estão integralmente cobertos 
+- Quais estão parcialmente cobertos (com justificativa)  
+- Quais estão fora do escopo, com a devida justificativa. 
 
 Essa padronização assegura que os testes sejam replicáveis e facilita a compreensão do alcance dos testes realizados, deixando claro quais critérios não são aplicáveis ao contexto do projeto.
 
