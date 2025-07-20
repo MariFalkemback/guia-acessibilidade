@@ -2,7 +2,7 @@
 
 Para garantir que uma funcionalidade esteja efetivamente pronta para ser submetida aos testes finais de acessibilidade e, eventualmente, para ser disponibilizada ao público, é essencial que ela atenda a critérios técnicos mínimos que assegurem sua qualidade e inclusão desde as etapas iniciais de desenvolvimento. Nesse sentido, a definição de critérios claros na chamada Definition of Ready (DoR) se torna uma prática recomendada em ambientes ágeis, permitindo que o desenvolvimento avance com responsabilidade e foco na experiência do usuário.
 
-Conforme apontam Ferreira, Vasconcelos e Furtado (2018), a adoção de critérios de acessibilidade como parte da DoR contribui para que a acessibilidade deixe de ser vista como um “ajuste posterior” e passe a ser considerada um elemento estrutural do produto.
+De acordo com a W3C‑WAI (2025), a acessiblidade deve ser considerada desde o início do ciclo de desenvolvimento do projeto, incluindo a acessibilidade na programação e utilizando checklists já na fase de planejamento para evitar retrabalho e internalizar práticas acessíveis. A adoção de critérios de acessibilidade como parte da DoR contribui para que a acessibilidade deixe de ser vista como um “ajuste posterior” e passe a ser considerada um elemento estrutural do produto.
 
 Dentre os critérios que devem compor essa preparação mínima, destacam-se:
 
@@ -16,7 +16,7 @@ Dentre os critérios que devem compor essa preparação mínima, destacam-se:
 
 Após a validação desses critérios, a dupla colaborativa realizará os testes de acessibilidade, seguindo o [roteiro de testes](roteiros.md#roteiros).
 
-Fluxograma das Estapas:
+Fluxograma das Etapas:
 
 ```mermaid
 flowchart TD

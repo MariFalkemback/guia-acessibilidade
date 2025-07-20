@@ -18,7 +18,7 @@
     
     
       
-        <title>Boas Práticas - Guia de Testes de Acessibilidade Digital</title>
+        <title>Boas Práticas e Considerações Finais - Guia de Testes de Acessibilidade Digital</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#boas-praticas" class="md-skip">
+        <a href="#boas-praticas-e-consideracoes-finais" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Boas Práticas
+              Boas Práticas e Considerações Finais
             
           </span>
         </div>
@@ -218,12 +218,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../introducao/" class="md-nav__link">
+      <a href="../fundamentos/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Introdução à Acessibilidade Digital
+    Fundamentos de Acessibilidade Digital
     
   </span>
   
@@ -267,7 +267,7 @@
   
   
   <span class="md-ellipsis">
-    Ferramentas Recomendadas
+    Sugestão de Ferramentas para Testes de Acessibilidade
     
   </span>
   
@@ -289,7 +289,7 @@
   
   
   <span class="md-ellipsis">
-    Como Diferenciar Defeitos de Acessiblidade
+    Diferenciação Por Tipo De Falha Em Testes De Acessibilidade
     
   </span>
   
@@ -311,7 +311,7 @@
   
   
   <span class="md-ellipsis">
-    Classificação de Defeitos em Testes de Acessibilidade
+    Classificação por Nível de Gravidade dos Defeitos de Acessibilidade
     
   </span>
   
@@ -333,7 +333,29 @@
   
   
   <span class="md-ellipsis">
-    Verificações Comuns Por Tipo de Deficiência
+    Verificações de Acessibilidade por Perfil de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../erros_recorrentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Erros Recorrentes em Testes de Acessibilidade
     
   </span>
   
@@ -408,7 +430,7 @@
   
   
   <span class="md-ellipsis">
-    Boas Práticas
+    Boas Práticas e Considerações Finais
     
   </span>
   
@@ -421,7 +443,7 @@
   
   
   <span class="md-ellipsis">
-    Boas Práticas
+    Boas Práticas e Considerações Finais
     
   </span>
   
@@ -527,7 +549,8 @@
 
 
 
-<h1 id="boas-praticas">Boas Práticas</h1>
+<h1 id="boas-praticas-e-consideracoes-finais">Boas Práticas e Considerações Finais</h1>
+<p>A acessibilidade digital não deve ser tratada como uma etapa final ou complementar no desenvolvimento de software, mas sim como um compromisso contínuo com a inclusão e a equidade no acesso à informação. Garantir que produtos digitais sejam utilizáveis por todas as pessoas, independentemente de suas habilidades, é não apenas uma exigência legal e ética, mas uma condição essencial para a qualidade e a sustentabilidade das soluções tecnológicas.</p>
 <p>Com base nas análises e práticas abordadas neste trabalho, recomenda-se que equipes de design, desenvolvimento e qualidade incorporem as seguintes ações de forma sistemática:</p>
 <hr />
 <h2 id="priorizacao-desde-o-inicio">Priorização desde o Início</h2>
@@ -558,14 +581,9 @@ O Product Owner propõe que os usuários façam login e validem operações usan
 </ul>
 <hr />
 <h2 id="definicao-clara-da-cobertura-padrao-dos-testes-de-acessibilidade">Definição clara da cobertura padrão dos testes de acessibilidade</h2>
-<p>Para garantir a qualidade e a consistência dos testes, recomenda-se definir um cenário padrão para avaliação da acessibilidade. Esse cenário deve incluir os seguintes parâmetros: </p>
+<p>Para garantir a qualidade e a consistência dos testes, recomenda-se definir um cenário padrão para avaliação da acessibilidade. Esse cenário deve incluir os seguintes parâmetros:</p>
 <p>dispositivo utilizado, sistema operacional e sua versão, navegador e versão, tecnologia assistiva empregada e versão, além do leitor de pdf e sua versão quando aplicável. </p>
-<p>Também é essencial listar quais critérios da WCAG são considerados  nos testes, especificando:</p>
-<ul>
-<li>Quais critérios estão integralmente cobertos </li>
-<li>Quais estão parcialmente cobertos (com justificativa)  </li>
-<li>Quais estão fora do escopo, com a devida justificativa. </li>
-</ul>
+<p>Também é essencial listar quais critérios da WCAG são considerados  nos testes, especificando quais critérios estão integralmente cobertos, quais estão parcialmente cobertos (com justificativa) e quais estão fora do escopo, com a devida justificativa. </p>
 <p>Essa padronização assegura que os testes sejam replicáveis e facilita a compreensão do alcance dos testes realizados, deixando claro quais critérios não são aplicáveis ao contexto do projeto.</p>
 <hr />
 <h2 id="registro-adequado-de-defeitos">Registro adequado de defeitos</h2>
@@ -574,6 +592,10 @@ O Product Owner propõe que os usuários façam login e validem operações usan
 <p>Sempre que possível, é recomendável incluir usuários com deficiência nos ciclos de testes de usabilidade e acessibilidade. A experiência prática desses usuários fornece insights valiosos que muitas vezes não são identificados por ferramentas automáticas ou testadores sem vivência direta com tecnologias assistivas.</p>
 <h2 id="documentacao-viva-e-colaborativa">Documentação viva e colaborativa</h2>
 <p>Manter uma base de conhecimento atualizada com exemplos de boas práticas, padrões adotados e lições aprendidas é essencial para o amadurecimento organizacional em acessibilidade. Essa documentação deve ser de fácil acesso e continuamente aprimorada à medida que novos aprendizados e requisitos surgem. </p>
+<p>A adoção dessas práticas promove uma cultura de desenvolvimento mais inclusiva, fortalece a conformidade com diretrizes como as WCAG e contribui para a construção de produtos digitais mais justos, eficazes e centrados no usuário. A acessibilidade, portanto, não é apenas uma meta técnica, mas um valor essencial a ser cultivado em todas as etapas do ciclo de vida do software.</p>
+<p>A realização de testes de acessibilidade digital requer um conjunto de procedimentos objetivos que permitam identificar falhas, registrar evidências e propor melhorias de forma sistemática. Para isso, é fundamental adotar um roteiro estruturado com base nas diretrizes da WCAG (Web Content Accessibility Guidelines), contemplando diferentes aspectos da interação entre o usuário e a interface.</p>
+<p>Este guia prático foi desenvolvido para apoiar equipes de design, desenvolvimento e qualidade na condução de testes manuais e semiautomatizados em páginas web e sistemas digitais. Cada item listado contempla o que deve ser verificado, como executar o teste, qual critério da WCAG está relacionado e um modelo padronizado de descrição do erro, facilitando o registro e o encaminhamento de correções.</p>
+<p>Os testes cobrem pontos críticos como componentes dinâmicos, validação de formulários, feedback visual e auditivo, navegação por regiões (landmarks), uso correto de modais, estrutura semântica, acessibilidade de vídeos, dimensionamento responsivo e tamanho de áreas clicáveis. Essas práticas não apenas garantem conformidade técnica, mas também promovem uma experiência mais inclusiva para usuários com diferentes perfis de deficiência.</p>
 
 
 

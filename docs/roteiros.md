@@ -1,11 +1,12 @@
 # <h1 id="roteiros">Roteiros de Testes</h1>
 
-Para facilitar o processo de testes, os roteiros são organizados por ambiente — web (desktop), web mobile / aplicativos mobile e PDF — e apresentam instruções claras sobre como executar cada verificação, quais critérios das WCAG são aplicáveis e orientam sobre o registro padronizado de falhas de acessibilidade.
+A realização de testes de acessibilidade é uma etapa essencial para garantir que aplicações digitais possam ser utilizadas por todos, independentemente de limitações físicas, sensoriais ou cognitivas. 
+
+Esses testes devem seguir roteiros bem definidos que cubram os principais aspectos de interação, navegação, percepção e compreensão da interface, conforme orientado pelas Diretrizes de Acessibilidade para Conteúdo Web (WCAG).
+
+Para facilitar esse processo, os roteiros de teste são organizados por ambiente, abrangendo plataformas web (desktop e mobile), aplicativos móveis e documentos em formato PDF, com instruções claras sobre como executar cada verificação, os critérios das WCAG aplicáveis e como registrar falhas de acessibilidade com base em observações padronizadas.
 
 Essa sistematização permite maior consistência nos testes manuais e automatizados, além de orientar as equipes de desenvolvimento na identificação e resolução de problemas. 
-
-Os testes cobrem pontos críticos como componentes dinâmicos, validação de formulários, feedback visual e auditivo, navegação por regiões (landmarks), uso correto de modais, estrutura semântica, acessibilidade de vídeos, dimensionamento responsivo e tamanho de áreas clicáveis. 
-
 A seguir, são apresentados os roteiros organizados por tipo de ambiente:
 
 •	**Testes para Web (Desktop)**: Focados na navegação por teclado, uso de leitores de tela, contraste de cores, estrutura semântica e interatividade.
@@ -17,6 +18,8 @@ A seguir, são apresentados os roteiros organizados por tipo de ambiente:
 Esses roteiros não substituem testes com usuários reais, mas servem como base técnica estruturada para validação contínua da acessibilidade durante o ciclo de desenvolvimento.
 
 ## Testes para Web (Desktop)
+
+A tabela a seguir apresenta os roteiros de testes de acessibilidade aplicáveis ao ambiente Web (Desktop):
 
 | ITEM DO TESTE | COMO TESTAR | WCAG Aplicável | OBSERVAÇÕES (Texto Padrão para Registro de Erro) |
 |:---------------------------------------|:----------------------------------------------------------------------------------------------------------|:-----------------|:------------------------------------------------------------------------------------------|
@@ -72,6 +75,8 @@ Os testes realizados para Web (Desktop) também podem ser aplicados ao ambiente 
 
 Esses ajustes garantem que a experiência do usuário em dispositivos móveis seja tão acessível quanto em ambientes de desktop.
 
+A tabela a seguir apresenta os roteiros de testes de acessiblidade para ambiente mobile:
+
 | ITEM DO TESTE                                     | COMO TESTAR                                                                                               | WCAG Aplicável | OBSERVAÇÕES (Texto Padrão para Registro de Erro)                                            |
 | :------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- | :------------- | :------------------------------------------------------------------------------------------ |
 | A navegação por gestos funciona corretamente?| Deslizar o dedo, realizar toques múltiplos e outros gestos nativos do sistema.                              | 2.1.1          | Relatar elementos que não respondem aos gestos ou causam navegação confusa.                 |
@@ -100,6 +105,9 @@ Esses ajustes garantem que a experiência do usuário em dispositivos móveis se
 | Mensagens de status são anunciadas por leitores de tela? | Observar interações que geram mensagens de status (ex: "carregando", "sucesso") e verificar se são anunciadas. | 4.1.3          | Indicar mensagens de status que não são percebidas por leitores de tela.                  |
 
 ## Testes para PDF
+
+A tabela a seguir apresenta o roteiro de verificação da acessibilidade em arquivos PDF, com instruções práticas de teste e os respectivos critérios da WCAG, visando apoiar a conformidade normativa e a construção de documentos digitais mais inclusivos:
+
 | ITEM DO TESTE | COMO TESTAR | WCAG Aplicável | OBSERVAÇÕES (Texto Padrão para Registro de Erro) |
 |:---------------------------------------|:----------------------------------------------------------------------------------------------------------|:-----------------|:------------------------------------------------------------------------------------------|
 | O conteúdo não textual possui descrição alternativa adequada? | Verificar se todas as imagens, gráficos e outros elementos não textuais possuem texto alternativo (alt text) ou estão marcados como artefato se forem decorativos. | 1.1.1 | Apontar imagens ou elementos gráficos sem descrição textual alternativa adequada. |

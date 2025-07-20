@@ -1,4 +1,7 @@
 site_name: Guia de Testes de Acessibilidade Digital
+site_url: https://marifalkemback.github.io/guia-acessibilidade/
+use_directory_urls: false
+
 theme:
   name: material
   features:
@@ -16,15 +19,16 @@ extra_css:
 
 nav:
   - Início: index.md
-  - Introdução à Acessibilidade Digital: introducao.md
+  - Fundamentos de Acessibilidade Digital: fundamentos.md
   - Abordagem Colaborativa: abordagem_colaborativa.md
-  - Ferramentas Recomendadas: ferramentas.md
-  - Como Diferenciar Defeitos de Acessiblidade: diferenciar_acessibilidade.md  
-  - Classificação de Defeitos em Testes de Acessibilidade: classificacao_defeitos.md
-  - Verificações Comuns Por Tipo de Deficiência: verificacoes_por_deficiencia.md
+  - Sugestão de Ferramentas para Testes de Acessibilidade: ferramentas.md
+  - Diferenciação Por Tipo De Falha Em Testes De Acessibilidade: diferenciar_acessibilidade.md  
+  - Classificação por Nível de Gravidade dos Defeitos de Acessibilidade: classificacao_defeitos.md
+  - Verificações de Acessibilidade por Perfil de Usuário: verificacoes_por_deficiencia.md
+  - Erros Recorrentes em Testes de Acessibilidade: erros_recorrentes.md
   - Definition of Ready: dor.md
   - Roteiros de Teste: roteiros.md  
-  - Boas Práticas: boas_praticas.md
+  - Boas Práticas e Considerações Finais: boas_praticas.md
 
 markdown_extensions:
   - pymdownx.superfences:

@@ -1,8 +1,10 @@
-# Como Diferenciar Defeitos de Acessiblidade
+# Diferenciação Por Tipo De Falha Em Testes De Acessibilidade
 
-Durante os testes de acessibilidade, é comum identificar também falhas que não se encaixam diretamente como erros de acessibilidade, mas que afetam a experiência do usuário. Por isso, é importante que a equipe saiba como encaminhar cada tipo de defeito corretamente.
+Durante a execução de testes de acessibilidade digital, é comum que a equipe identifique diferentes tipos de falhas que impactam a experiência do usuário. Nem todas essas falhas, no entanto, são tecnicamente classificadas como erros de acessibilidade no sentido estrito, o que exige atenção na forma como são registradas e encaminhadas para resolução.
 
-A classificação a seguir apresenta três tipos principais de defeitos que surgem frequentemente em testes de acessibilidade, com base em sua natureza técnica e na forma como afetam a interação do usuário com a aplicação:
+Saber diferenciar os tipos de defeitos encontrados é fundamental para que se possa atuar de maneira assertiva, respeitando a natureza técnica de cada problema e otimizando os fluxos de correção. Além disso, esse processo contribui para o aprimoramento contínuo da acessibilidade e da usabilidade geral do produto, reforçando o compromisso da organização com uma experiência digital inclusiva.
+
+A classificação a seguir apresenta três tipos principais de defeitos que surgem frequentemente em testes de acessibilidade, com base  em sua origem e impacto na interação do usuário: 
 
 | Tipo de Defeito   | Descrição                                                                                     | Observações                                                                                                        | Encaminhamento                                                                                   |
 |:------------------|:----------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
