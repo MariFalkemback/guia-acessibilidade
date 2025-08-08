@@ -1,6 +1,4 @@
 site_name: Guia de Testes de Acessibilidade Digital
-site_url: https://marifalkemback.github.io/guia-acessibilidade/
-use_directory_urls: false
 
 theme:
   name: material
