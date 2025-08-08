@@ -39,20 +39,6 @@ Portanto, a integração da acessibilidade no processo de criação e disponibil
 
 Por isso, é fundamental que instituições de ensino, empresas, desenvolvedores e gestores públicos compreendam a importância da acessibilidade como parte da qualidade e da responsabilidade social de seus produtos e serviços digitais. Iniciativas de capacitação, auditorias de acessibilidade e políticas institucionais voltadas à inclusão são caminhos importantes para transformar o ambiente digital em um espaço verdadeiramente acessível e democrático.
 
-................
-
-No desenvolvimento de sistemas, acessibilidade não é apenas uma boa prática — é uma exigência legal e ética. A acessibilidade digital é reconhecida como um direito por instituições como a ONU, e está prevista em leis brasileiras, como a **[Lei Brasileira de Inclusão](#lbi)** (nº 13.146/2015), nas diretrizes internacionais **[WCAG](#wcag)** (Web Content Accessibility Guidelines), mantidas pelo W3C, e no **[e-MAG](#e-MAG)** (Modelo de Acessibilidade em Governo Eletrônico), mantido pelo governo brasileiro.
-O não cumprimento pode acarretar sanções legais, além de comprometer a imagem institucional perante a sociedade.
-
-Em um mundo cada vez mais conectado e dependente da tecnologia para atividades essenciais — como educação, trabalho, saúde e serviços públicos, excluir pessoas por barreiras digitais significa limitar sua cidadania e participação social.
-
-Por isso, é fundamental que instituições de ensino, empresas, desenvolvedores e gestores públicos compreendam a importância da acessibilidade como parte da qualidade e da responsabilidade social de seus produtos e serviços digitais. Iniciativas de capacitação, auditorias de acessibilidade e políticas institucionais voltadas à inclusão são caminhos importantes para transformar o ambiente digital em um espaço verdadeiramente acessível e democrático.
-
-A acessibilidade digital é especialmente importante em contextos educacionais e governamentais, onde o acesso à informação deve ser garantido como um direito fundamental. Quando os recursos pedagógicos não são projetados com acessibilidade, eles podem excluir completamente alunos com deficiência da experiência de aprendizagem.
-
-Além de promover o acesso equitativo, a acessibilidade também oferece benefícios amplos para instituições e empresas. Sites acessíveis tendem a apresentar melhor usabilidade para todos os usuários, independentemente de suas habilidades, pois oferecem navegação mais clara, organização lógica do conteúdo e interfaces intuitivas. Isso pode resultar em maior engajamento, menor taxa de rejeição e melhor posicionamento em mecanismos de busca, visto que a acessibilidade também contribui para o SEO (Search Engine Optimization).
-
-Além disso, quando se considera a acessibilidade desde as etapas iniciais do desenvolvimento de um sistema, os custos de implementação são significativamente menores do que se for necessário realizar correções posteriores. Essa abordagem preventiva também demonstra compromisso social e respeito à diversidade, valores cada vez mais valorizados por consumidores, alunos e cidadãos em geral.
 
 ---
 ## Principais Diretrizes e Normas
