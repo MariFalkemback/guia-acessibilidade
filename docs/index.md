@@ -11,42 +11,42 @@ O material tem como objetivo auxiliar profissionais de tecnologia na incorporaç
 ## Visão geral do Guia:
 [Conhecer os Fundamentos](fundamentos.md#fundamentos-de-acessibilidade-digital)
 
-    ➤ Entenda o conceito, os desafios e a importância da acessibilidade digital
+➤ Entenda o conceito, os desafios e a importância da acessibilidade digital
 
-    ➤ Conheça as diretrizes: LBI, WCAG, eMAG
+➤ Conheça as diretrizes: LBI, WCAG, eMAG
 
-    ➤ Conheça as tecnologias assistivas
+➤ Conheça as tecnologias assistivas
 
 [Adotar uma Abordagem Colaborativa](abordagem_colaborativa.md#abordagem-colaborativa)
 
-    ➤ Envolva profissionais com e sem deficiência nos testes
+➤ Envolva profissionais com e sem deficiência nos testes
 
 [Escolher as Ferramentas](ferramentas.md#ferramentas-sugeridas-para-testes-de-acessiblidade) 
 
-    ➤ Ferramentas automáticas sugeridas para detecção inicial de falhas
+➤ Ferramentas automáticas sugeridas para detecção inicial de falhas
 
 [Diferenciar e Classificar as Falhas](diferenciar_acessibilidade.md#diferenciacao-por-tipo-de-falha-em-testes-de-acessibilidade) 
 
-    ➤ Aprenda a identificar se o problema é funcional, de usabilidade ou do agente de usuário
+➤ Aprenda a identificar se o problema é funcional, de usabilidade ou do agente de usuário
 
-    ➤ Entenda como classificar o risco da implementação com defeitos de acessibilidade: baixo, médio ou alto
+➤ Entenda como classificar o risco da implementação com defeitos de acessibilidade: baixo, médio ou alto
 
 [Considerar o Perfil do Usuário](verificacoes_por_deficiencia.md#verificacoes-de-acessibilidade-por-perfil-de-usuario) 
 
-    ➤ Aplique verificações específicas para o contexto do seu projeto para deficiência visual, auditiva, motora e cognitiva
+➤ Aplique verificações específicas para o contexto do seu projeto para deficiência visual, auditiva, motora e cognitiva
 
 [Evitar Erros Comuns](erros_recorrentes.md#erros-recorrentes-em-testes-de-acessibilidade)
 
-    ➤ Consulte uma lista com falhas recorrentes observadas em testes reais
+➤ Consulte uma lista com falhas recorrentes observadas em testes reais
 
 [Verificar a DoR para Acessibilidade](dor.md#definition-of-ready-dor-para-acessiblidade) 
 
-    ➤ Garanta que a funcionalidade esteja minimamente pronta antes de testar a acessibilidade
+➤ Garanta que a funcionalidade esteja minimamente pronta antes de testar a acessibilidade
 
 [Aplicar os Roteiros de Teste](roteiros.md#roteiros-de-testes) 
 
-    ➤ Use os roteiros conforme o ambiente: Web, Mobile, PDF
+➤ Use os roteiros conforme o ambiente: Web, Mobile, PDF
 
 [Aplicar Boas Práticas](boas_praticas.md#boas-praticas-e-consideracoes-finais) 
 
-    ➤ Siga as orientacoes de boas praticas para melhorar os processos e promover a acessibilidade desde o início do projeto.
+➤ Siga as orientacoes de boas praticas para melhorar os processos e promover a acessibilidade desde o início do projeto.
