@@ -9,22 +9,22 @@ O material tem como objetivo auxiliar profissionais de tecnologia na incorporaç
 
 
 ## Visão geral do Guia:
-[Conhecer os Fundamentos](fundamentos.md#-Fundamentos-de-Acessibilidade-Digital)
+[Conhecer os Fundamentos](fundamentos.md#fundamentos-de-acessibilidade-digital)
 ➤ Entenda o conceito, os desafios e a importância da acessibilidade digital
 ➤ Conheça as diretrizes: LBI, WCAG, eMAG
 ➤ Conheça as tecnologias assistivas
 
-[Adotar uma Abordagem Colaborativa](abordagem_colaborativa.md#-Abordagem-Colaborativa)
+[Adotar uma Abordagem Colaborativa](abordagem_colaborativa.md#abordagem-colaborativa)
 ➤ Envolva profissionais com e sem deficiência nos testes
 
-[Escolher as Ferramentas](ferramentas.md#-Ferramentas-Sugeridas-para-Testes-de-Acessiblidade) 
+[Escolher as Ferramentas](ferramentas.md#ferramentas-sugeridas-para-testes-de-acessiblidade) 
 ➤ Ferramentas automáticas sugeridas para detecção inicial de falhas
 
-[Diferenciar e Classificar as Falhas](diferenciar_acessibilidade.md#diferenciação-por-tipo-de-falha-em-testes-de-acessibilidade) 
+[Diferenciar e Classificar as Falhas](diferenciar_acessibilidade.md#diferenciacao-por-tipo-de-falha-em-testes-de-acessibilidade) 
 ➤ Aprenda a identificar se o problema é funcional, de usabilidade ou do agente de usuário
 ➤ Entenda como classificar o risco da implementação com defeitos de acessibilidade: baixo, médio ou alto
 
-[Considerar o Perfil do Usuário](verificacoes_por_deficiencia.md#verificações-de-acessibilidade-por-perfil-de-usuário) 
+[Considerar o Perfil do Usuário](verificacoes_por_deficiencia.md#verificacoes-de-acessibilidade-por-perfil-de-usuario) 
 ➤ Aplique verificações específicas para o contexto do seu projeto para deficiência visual, auditiva, motora e cognitiva
 
 [Evitar Erros Comuns](erros_recorrentes.md#erros-recorrentes-em-testes-de-acessibilidade)
@@ -36,5 +36,5 @@ O material tem como objetivo auxiliar profissionais de tecnologia na incorporaç
 [Aplicar os Roteiros de Teste](roteiros.md#roteiros-de-testes) 
 ➤ Use os roteiros conforme o ambiente: Web, Mobile, PDF
 
-[Aplicar Boas Práticas](boas_praticas.md#boas-práticas-e-considerações-finais) 
+[Aplicar Boas Práticas](boas_praticas.md#boas-praticas-e-consideracoes-finais) 
 ➤ Siga as orientacoes de boas praticas para melhorar os processos e promover a acessibilidade desde o início do projeto.
